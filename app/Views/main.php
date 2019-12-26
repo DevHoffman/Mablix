@@ -91,7 +91,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service service_bg_1">
                         <div class="service_hover">
-                            <img src="template/img/svg_icon/legal-paper.svg" alt="">
+                            <img src="<?php echo base_url('assets/img/svg_icon/legal-paper.svg') ?>" alt="">
                             <h3>Invoicing</h3>
                             <div class="hover_content">
                                 <div class="hover_content_inner">
@@ -105,7 +105,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service service_bg_2">
                         <div class="service_hover">
-                            <img src="template/img/svg_icon/case.svg" alt="">
+                            <img src="<?php echo base_url('assets/img/svg_icon/case.svg') ?>" alt="">
                             <h3>Business Growth</h3>
                             <div class="hover_content">
                                     <div class="hover_content_inner">
@@ -119,7 +119,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service service_bg_3">
                         <div class="service_hover">
-                            <img src="template/img/svg_icon/survey.svg" alt="">
+                            <img src="<?php echo base_url('assets/img/svg_icon/survey.svg') ?>" alt="">
                             <h3>Problem Solving</h3>
                             <div class="hover_content">
                                     <div class="hover_content_inner">
@@ -141,7 +141,7 @@
             <div class="row no-gutters align-items-center">
                 <div class="col-xl-6 col-lg-6">
                     <div class="about_image">
-                        <img src="template/img/about/about.png" alt="">
+                        <img src="<?php echo base_url('assets/img/about/about.png') ?>" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
@@ -208,7 +208,7 @@
                     <div class="col-xl-4 col-lg-6 grid-item cat1 col-md-6">
                         <div class="single-gallery mb-20">
                                 <div class="portfolio-img">
-                                        <img src="template/img/gallery/1.png" alt="">
+                                        <img src="<?php echo base_url('assets/img/gallery/1.png') ?>" alt="">
                                 </div>
                                 <div class="gallery_hover">
                                     <a  href="portfolio_details.html" class="hover_inner">
@@ -221,7 +221,7 @@
                     <div class="col-xl-4 col-lg-6 grid-item cat3 cat4 col-md-6">
                         <div class="single-gallery mb-20">
                                 <div class="portfolio-img">
-                                        <img src="template/img/gallery/2.png" alt="">
+                                        <img src="<?php echo base_url('assets/img/gallery/2.png') ?>" alt="">
                                 </div>
                                 <div class="gallery_hover">
                                     <a  href="portfolio_details.html" class="hover_inner">
@@ -234,7 +234,7 @@
                     <div class="col-xl-4 col-lg-6 grid-item cat4 col-md-6">
                         <div class="single-gallery mb-20">
                                 <div class="portfolio-img">
-                                        <img src="template/img/gallery/3.png" alt="">
+                                        <img src="<?php echo base_url('assets/img/gallery/3.png') ?>" alt="">
                                 </div>
                                 <div class="gallery_hover">
                                     <a  href="portfolio_details.html" class="hover_inner">
@@ -247,7 +247,7 @@
                     <div class="col-xl-8 col-lg-6 grid-item cat2 col-md-6">
                         <div class="single-gallery mb-20">
                             <div class="portfolio-img">
-                                    <img src="template/img/gallery/4.png" alt="">
+                                    <img src="<?php echo base_url('assets/img/gallery/4.png') ?>" alt="">
                             </div>
                             <div class="gallery_hover">
                                 <a  href="portfolio_details.html" class="hover_inner">
@@ -260,7 +260,7 @@
                     <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
                         <div class="single-gallery mb-20">
                             <div class="portfolio-img">
-                                    <img src="template/img/gallery/5.png" alt="">
+                                    <img src="<?php echo base_url('assets/img/gallery/5.png') ?>" alt="">
                             </div>
                             <div class="gallery_hover">
                                 <a  href="portfolio_details.html" class="hover_inner">
@@ -288,21 +288,21 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_service_wrap text-center">
-                        <img src="template/img/svg_icon/controls.svg" alt="">
+                        <img src="<?php echo base_url('assets/img/svg_icon/controls.svg') ?>" alt="">
                         <h3>Unlimited Control</h3>
                         <p>These cases are perfectly simple and easy to </p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_service_wrap text-center">
-                        <img src="template/img/svg_icon/bar-chart.svg" alt="">
+                        <img src="<?php echo base_url('assets/img/svg_icon/bar-chart.svg') ?>" alt="">
                         <h3>Rapidly Growth</h3>
                         <p>These cases are perfectly simple and easy to </p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_service_wrap text-center">
-                        <img src="template/img/svg_icon/puzzle.svg" alt="">
+                        <img src="<?php echo base_url('assets/img/svg_icon/puzzle.svg') ?>" alt="">
                         <h3>Problem Solving</h3>
                         <p>These cases are perfectly simple and easy to </p>
                     </div>
@@ -338,7 +338,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="finance_thumb">
-                        <img src="template/img/about/finance.png" alt="">
+                        <img src="<?php echo base_url('assets/img/about/finance.png') ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -351,21 +351,21 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                         <div class="testmonial_active2 owl-carousel">
-                            <div  class="single_slider text-center" data-dot='<img src="template/img/testmonial/1.png" alt="#" ' >
+                            <div  class="single_slider text-center" data-dot='<img src="<?php echo base_url('assets/img/testmonial/1.png') ?>" alt="#" ' >
                                     <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able.</p>
                                     <div class="author_name text-center">
                                         <h4>Robert Jonson</h4>
                                         <span> Business Owner</span>
                                     </div>
                                 </div>
-                            <div  class="single_slider text-center" data-dot='<img src="template/img/testmonial/1.png" alt="#" ' >
+                            <div  class="single_slider text-center" data-dot='<img src="<?php echo base_url('assets/img/testmonial/1.png') ?>" alt="#" ' >
                                     <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able.</p>
                                     <div class="author_name text-center">
                                         <h4>Robert Jonson</h4>
                                         <span> Business Owner</span>
                                     </div>
                                 </div>
-                            <div  class="single_slider text-center" data-dot='<img src="template/img/testmonial/1.png" alt="#" ' >
+                            <div  class="single_slider text-center" data-dot='<img src="<?php echo base_url('assets/img/testmonial/1.png') ?>" alt="#" ' >
                                     <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able.</p>
                                     <div class="author_name text-center">
                                         <h4>Robert Jonson</h4>

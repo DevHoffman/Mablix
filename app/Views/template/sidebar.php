@@ -1,3 +1,8 @@
+<!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+<!-- header-start -->
 <header>
     <div class="header-area ">
         <div class="header-top_area d-none d-lg-block">
@@ -34,7 +39,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="template/img/logo.png" alt="">
+                                    <img src="<?php echo base_url('assets/img/logo.png') ?>" alt="">
                                 </a>
                             </div>
                         </div>
@@ -43,22 +48,22 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="<?php echo base_url() ?>">home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Services</a></li>
                                         <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
+                                                <li><a href="#">blog</a></li>
+                                                <li><a href="#">single-blog</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                 <li><a href="elements.html">elements</a></li>
-                                                <li><a href="Portfolio.html">Portfolio</a></li>
-                                                <li><a href="portfolio_details.html">Portfolio details</a></li>
+                                                 <li><a href="#">elements</a></li>
+                                                <li><a href="#">Portfolio</a></li>
+                                                <li><a href="#">Portfolio details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -85,3 +90,4 @@
         </div>
     </div>
 </header>
+<!-- header-end -->

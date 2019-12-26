@@ -6,7 +6,7 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="<?php echo base_url('img/footer_logo.png') ?>" alt="">
+                                    <img src="<?php echo base_url('assets/img/footer_logo.png') ?>" alt="">
                                 </a>
                             </div>
                             <p>
