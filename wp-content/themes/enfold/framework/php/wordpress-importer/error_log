@@ -1,9 +1,0 @@
-[09-Apr-2019 12:07:57 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:07:57 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:08:25 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:08:25 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:08:37 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:08:37 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:06 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:06 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:06 America/Chicago] PHP Fatal error:  Class 'WP_Import' not found in /home/rochaepa/public_html/www.somosviagem.com.br/site/wp-content/themes/enfold/framework/php/wordpress-importer/avia-import-class.php on line 3

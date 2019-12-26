@@ -1,7 +1,0 @@
-[09-Apr-2019 12:08:53 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:08:53 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:08 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:08 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:08 America/Chicago] PHP Fatal error:  Call to undefined function current_theme_supports() in /home/rochaepa/public_html/www.somosviagem.com.br/site/wp-content/themes/enfold/framework/php/auto-updates/auto-updates.php on line 6
-[09-Apr-2019 12:09:23 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
-[09-Apr-2019 12:09:23 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
