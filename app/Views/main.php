@@ -388,7 +388,7 @@
                         <h3>Do you Have any Project?</h3>
                         <p>Nam libero tempore, cum soluta nobis est eligendi optio <br>
                                 cumque nihil impedit quo minus.</p>
-                        <a href="#" class="boxed-btn3-white">Contact Us</a>
+                        <a class="boxed-btn3-white popup-with-form" href="#test-form">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -410,20 +410,23 @@
                     <h3>Get Free Quote</h3>
                 </div>
                 <div class="custom_form">
-                        <div class="row">
-                                <div class="col-xl-12">
-                                    <input type="text" placeholder="Your Name">
-                                </div>
-                                <div class="col-xl-12">
-                                    <input type="email" placeholder="Email">
-                                </div>
-                                <div class="col-xl-12">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12">
-                                    <button type="submit" class="boxed-btn3">Send</button>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="col-xl-12">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="col-xl-12">
+                            <input type="subject" placeholder="Subject">
+                        </div>
+                        <div class="col-xl-12">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed-btn3">Send</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

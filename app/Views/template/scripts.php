@@ -5,13 +5,13 @@
 <script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/owl.carousel.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/isotope.pkgd.min.js') ?>"></script>
-<!-- <script src="<?php echo base_url('assets/js/ajax-form.js') ?>"></script> -->
+<script src="<?php echo base_url('assets/js/ajax-form.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/waypoints.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.counterup.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/imagesloaded.pkgd.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/scrollIt.js') ?>"></script>
-<!-- <script src="<?php echo base_url('assets/js/jquery.scrollUp.min.js') ?>"></script> -->
-<!-- <script src="<?php echo base_url('assets/js/wow.min.js') ?>"></script> -->
+<script src="<?php echo base_url('assets/js/jquery.scrollUp.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/wow.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/nice-select.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.slicknav.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js') ?>"></script>
