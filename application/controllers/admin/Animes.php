@@ -88,15 +88,13 @@ class Animes extends CI_Controller {
 
         $dados_form = $this->input->post();
 
+        var_dump($dados_form); exit(); 
+
         // Regras de Validação
         $this->form_validation->set_rules('anime', 'anime', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('categoria', 'categoria', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('email','email','trim|required|min_length[8]|valid_email');
-        $this->form_validation->set_rules('senha','senha','trim|required|min_length[8]');
-        $this->form_validation->set_rules('senha2','senha','trim|required|min_length[8]|matches[senha]');
 
-        if ( !empty($dados_form['login']) && !empty($dados_form['senha']) && !empty($dados_form['senha2'])  ) {
-            $dados_form = $this->login->create_account($dados_form['login'], $dados_form['senha'], $dados_form['senha2'], $dados_form['name'], $dados_form['email']);
+        if ( !empty($dados_form['anime']) && !empty($dados_form['categoria']) ){
 
             $this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
         }

@@ -184,12 +184,7 @@
 						                    $.alert('Anime inválido, deve conter no mínimo 3 caracteres.');
 						                    return false;
 						                }
-						                var datalancamento = this.$content.find('.data').val();
-						                if( datalancamento.length <= 9 ){
-						                    $.alert('Data inválida, deve conter 10 caracteres.');
-						                    return false;
-						                }
-
+						                
 										$.ajax({
 
 											type: "POST",
