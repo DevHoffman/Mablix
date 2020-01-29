@@ -652,7 +652,7 @@ select {
     padding: 1.8rem 1rem;
     border: 0;
     outline: none;
-    color: #39b54a;
+    color: white;
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
     line-height: 3rem;
@@ -825,14 +825,14 @@ input[type="button"] {
     line-height: calc(5.4rem - .4rem);
     padding: 0 3rem;
     margin: 0 .3rem 1.2rem 0;
-    color: #000000;
+    color: white;
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #39b54a;
+    background-color: #39B54E;
     border: .2rem solid #39b54a;
 }
 
@@ -846,10 +846,11 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    background-color: #b8b8b8;
-    border-color: #b8b8b8;
-    color: #000000;
+    background-color: transparent;
+    border-color: #39b54a;
+    color: #39b54a;
     outline: 0;
+    transition: all .5s;
 }
 
 
@@ -985,7 +986,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 #lista_animes {
     padding: 9rem 0;
-    text-align: center;
+    /* text-align: center; */
     background-color: white;
 }
 
@@ -1669,10 +1670,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 0;
     height: 20rem;
     display: grid;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .header-nav .header-nav_perfil h2{
@@ -1689,8 +1686,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    margin-bottom: 4.8rem;
-    margin-top: .9rem;
+    margin-top: 1rem;
     color: #39b54a;
 }
 
@@ -1708,8 +1704,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav__list {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.8rem;
-    margin: 3.6rem 0 3rem 0;
-    padding: 0 0 1.8rem 0;
+    margin: 2.5rem 0 3rem 0;
     list-style: none;
 }
 
@@ -1826,6 +1821,7 @@ ul.header-nav__list hr{
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
     left: 0;
+    top: 2rem;
 }
 
 
@@ -2856,6 +2852,83 @@ a.btn-search {
 }
 
 /* ===================================================================
+ * # Cadastro Animes
+ *
+ * ------------------------------------------------------------------- */
+#cadastrar{
+    background-image: none;
+}
+
+#cadastrar hr{
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+#cadastrar form select{
+    font-size: 3rem;
+}
+
+#cadastrar form .form-group{
+    margin-bottom: 5rem;
+}
+
+#cadastrar form input, #cadastrar form textarea, #cadastrar form select{
+    resize: none;
+    background-color: #111111;
+}
+
+#cadastrar form .header-nav_perfil h2:after{
+    background-color: rgb(0,0,0,.8);
+}
+
+#cadastrar form .header-nav_perfil h2{
+    height: auto;
+    display: table;
+    margin: auto;
+}
+
+#cadastrar form input.Anime{
+     font-size: 4rem;
+     text-align: center;
+}
+
+#cadastrar #myvideo{
+    width: auto;
+    height: 39rem;
+    display: none;
+}
+
+#cadastrar form .trailer input{
+    display: none;
+}
+
+#cadastrar form .trailer{
+    color: #39b54a;
+    padding: 1rem 2rem;
+    border: 1px solid #39b54a;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#cadastrar form .trailer:hover{
+    color: white;
+    background-color: #39b54a;
+}
+
+#cadastrar form .error{
+    color: #39b54a;
+}
+
+button#VoltarBtn{
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    z-index: 1;
+}
+
+
+/* ===================================================================
  * # perfil
  *
  * ------------------------------------------------------------------- */
@@ -2866,21 +2939,24 @@ a.btn-search {
 	float: left;
 }
 
-.s-usuarios .header-nav_perfil input{
+.header-nav_perfil input{
     display: none;
 }
 
-.s-usuarios .header-nav_perfil{
+#perfil .header-nav_perfil{
+	border-radius: 50%;
+}
+
+.header-nav_perfil{
 	background-position: center;
 	background-size: cover;
-	border-radius: 50%;
 	height: 25vw;
 	box-shadow: 0 0 35px inset black;
 	cursor: pointer;
 	display: -webkit-box;
 }
 
-.s-usuarios .header-nav_perfil h2{
+.header-nav_perfil h2{
 	color: white;
 	margin: 75% auto;
 	text-shadow: 0 0 9px black;
@@ -2905,7 +2981,6 @@ a.btn-search {
 .page-item:not(.disabled):hover{cursor: pointer;}
 
 #usuarios .btn-group button:hover{
-    background-color: white;
 }
 
 
@@ -2977,6 +3052,9 @@ a.btn-search {
     left: 0;
     bottom: 3.6rem;
     padding: 0 3.3rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    background-color: rgb(0,0,0,.6);
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -3326,9 +3404,9 @@ a.btn-search {
  * # Login 
  *
  * ------------------------------------------------------------------- */
-#login form{
-    width: 70%;
+#login .contact-login{
     margin: auto;
+    float: none;
 }
 
 
@@ -3588,7 +3666,7 @@ a.btn-search {
 .message-warning, 
 .message-success {
     display: none;
-    background: black;
+     background: black; 
     font-size: 1.5rem;
     line-height: 2;
     padding: 3rem;
@@ -3908,7 +3986,7 @@ footer .row {
  * ## footer bottom
  * --------------------------------------------------------------- */
 .footer-bottom {
-    margin: 3rem auto;
+    padding: 3rem 0;
     text-align: center;
     font-size: 14px;
 }

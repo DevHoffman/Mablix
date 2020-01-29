@@ -35,16 +35,19 @@ class Animes extends CI_Controller {
 		$data['footer'] = $this->template->footer();
 		$data['scripts'] = $this->template->scripts([
 			'scripts' => [ 
-				'//cdn.jsdelivr.net/npm/afterglowplayer@1.x'
+				base_url(THIRD_PARTY . "afterglow/afterglow.min.js")
 			]
 		]);
 
 		$data['rows_post'] = $this->query->findByIdEpisodio($id_episodio);
 
+		// var_dump($data['rows_post']); exit();
+
 		if ($data['rows_post'] == null ) { exit(); }
 
-		$data['h3'] = $data['rows_post'][0]['Anime'];
+		$data['Anime'] = $data['rows_post'][0]['Anime'];
 		$data['h2'] = $data['rows_post'][0]['Titulo'];
+		$data['Episodio'] = $data['rows_post'][0]['Titulo'];
 		$data['Imagem_Destacada'] = $data['rows_post'][0]['Imagem_Destacada'];
 		$data['Video'] = $data['rows_post'][0]['Video'];
 
@@ -67,6 +70,7 @@ class Animes extends CI_Controller {
 
 		$data['h3'] = $data['rows_post'][0]['Categoria'];
 		$data['h1'] = $data['rows_post'][0]['Anime'];
+		$data['anime'] = $data['rows_post'][0]['Anime'];
 		$data['Imagem_Destacada'] = $data['rows_post'][0]['Imagem_Destacada'];
 
 		$this->load->view('page_episodios', $data);
@@ -101,7 +105,7 @@ class Animes extends CI_Controller {
 			  	<div class="masonry__brick col-3" data-aos="fade-up">
 		            <div class="item-folio">
 		              	<a href="' . base_url("animes/anime/" . $value['CodiAnime']) . '" class="thumb-link" title="' . $value['Anime'] . '" data-size="1050x700">
-			                <div class="item-folio__thumb" style="background-image: url(' . base_url($value["Imagem_Destacada"]) . ')"></div>
+			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/{$value["Anime"]}/banner/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
 			                <div class="item-folio__text">
 			                  	<h3 class="item-folio__title">' . $value["Anime"] . '</h3>
 			                  	<p class="item-folio__cat">' . $value["Categoria"] . '</p>
@@ -126,10 +130,10 @@ class Animes extends CI_Controller {
 			  	<div class="masonry__brick col-3" data-aos="fade-up">
 		            <div class="item-folio">
 		              	<a href="' . base_url("animes/episodio/" . $value['CodiEpisodio']) . '" class="thumb-link" title="' . $value['Titulo'] . '" data-size="1050x700">
-			                <div class="item-folio__thumb" style="background-image: url(' . base_url($value["Imagem_Destacada"]) . ')"></div>
+			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/{$value["Anime"]}/{$value["Titulo"]}/banner/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
 			                <div class="item-folio__text">
+			                  	<p class="item-folio__cat">' . $value["Anime"] . '</p>
 			                  	<h3 class="item-folio__title">' . $value["Titulo"] . '</h3>
-			                  	<p class="item-folio__cat">' . $value["Categoria"] . '</p>
 			                </div>
 			                <div class="item-folio__project-link">
 			                  	<i class="icon-link"></i>

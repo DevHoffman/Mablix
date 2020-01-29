@@ -20,9 +20,8 @@ class Query_posts_model extends CI_Model
     }
 
     public function load_more_episodios($limit, $start) {
-            $query = $this->db->select("*")
+            $query = $this->db->select('CodiEpisodio, Titulo, Anime, E.Imagem_Destacada, Video')
             ->join('tbl_animes A', "A.CodiAnime = E.CodiAnime")
-            ->join('tbl_categorias C', "C.CodiCategoria = A.CodiCategoria")
             ->order_by("E.CodiAnime", "DESC")
             ->limit($limit, $start)
             ->get('tbl_episodios E');
@@ -64,9 +63,10 @@ class Query_posts_model extends CI_Model
 	}
 
 	public function findByIdEpisodio($id_episodio) {
-		$query = $this->db->where("E.CodiEpisodio", $id_episodio)
+		$query = $this->db->select('CodiEpisodio, Titulo, E.CodiAnime, Anime, E.Imagem_Destacada, Video')
 			->join('tbl_animes A', 'A.CodiAnime = E.CodiAnime')
 			->join('tbl_categorias C', "C.CodiCategoria = A.CodiCategoria")
+			->where("E.CodiEpisodio", $id_episodio)
 			->get('tbl_episodios E');
 		if ($query->num_rows() > 0) {
 			return $query->result_array();

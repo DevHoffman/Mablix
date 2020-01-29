@@ -26,19 +26,19 @@
 					<div class="col-8">
 						<fieldset>
 							<div class="form-field">
-								<input type="text" name="name" value="<?php echo $usuarioNome ?>" placeholder="Nome" minlength="3" class="full-width" autofocus />
+								<input type="text" name="name" value="<?php echo $usuarioNome ?>" placeholder="Nome" minlength="3" class="full-width" autofocus area-required="true" />
 							</div>
 							<div class="form-field">
-								<input type="text" name="email" value="<?php echo $usuarioEmail ?>" placeholder="Email" minlength="3" class="full-width" />
+								<input type="email" name="email" value="<?php echo $usuarioEmail ?>" placeholder="Email" minlength="3" class="full-width" area-required="true" />
 							</div>
 							<div class="form-field">
-								<input type="text" name="login" value="<?php echo $usuarioLogin ?>" placeholder="Login" minlength="3" class="full-width" />
+								<input type="text" name="login" value="<?php echo $usuarioLogin ?>" placeholder="Login" minlength="3" class="full-width" area-required="true" />
 							</div>
 							<div class="form-field">
-								<input type="password" name="senha" placeholder="Alterar Senha" minlength="8" class="full-width" />
+								<input type="password" name="senha" placeholder="Alterar Senha" minlength="8" class="full-width" area-required="true" />
 							</div>
 							<div class="form-field">
-								<input type="password" name="senha2" placeholder="Confirmar alteração de Senha" minlength="8" class="full-width" />
+								<input type="password" name="senha2" placeholder="Confirmar alteração de Senha" minlength="8" class="full-width" area-required="true" />
 							</div>
 							<div class="form-field">
 								<?php echo form_submit('enviar', 'Atualizar', array('class' => 'full-width btn--primary') ) ?>
@@ -68,7 +68,6 @@
 
 					</div>
 				</div>
-
 			</div>
 
 		</section>

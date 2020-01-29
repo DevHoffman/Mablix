@@ -18,7 +18,7 @@
 
             <div class="row contact-content aos-init aos-animate" data-aos="fade-up">
                 
-                <div class="contact-login full-width">
+                <div class="contact-login col-8">
 
                     <?php echo form_open(base_url('login/autenticate'), $atributos_form_login) ?>
 

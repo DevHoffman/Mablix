@@ -7,7 +7,7 @@ class Login extends CI_Controller {
     function __construct()
     {
         parent::__construct();
-		$this->load->model('Login_model', 'login');
+		$this->load->model('admin/Usuarios_model', 'usuarios');
     }
 
 	public function index() {
@@ -21,7 +21,7 @@ class Login extends CI_Controller {
         // Formulário de Acesso
         $data['atributos_form_login'] = array(
             'id'            =>      'formlogin',
-            'novalidate'    =>      'novalidate',
+            'novalidate'    =>      'novalidate'
         );
 
 		$data['atributos_login'] = array(
@@ -62,28 +62,10 @@ class Login extends CI_Controller {
 
         if ( !empty($dados_form['login']) && !empty($dados_form['senha']) ) {
 
-            $dados_form = $this->login->autenticate($dados_form['login'], $dados_form['senha']);
+            $dados_form = $this->usuarios->autenticate($dados_form['login'], $dados_form['senha']);
 
             $this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
         }
     }
-
-    // public function create_account(){
-
-    //     $dados_form = $this->input->post();
-
-    //     // Regras de Validação
-    //     $this->form_validation->set_rules('name', 'name', 'trim|required|min_length[3]');
-    //     $this->form_validation->set_rules('login', 'login', 'trim|required|min_length[3]');
-    //     $this->form_validation->set_rules('email','email','trim|required|min_length[8]|valid_email');
-    //     $this->form_validation->set_rules('senha','senha','trim|required|min_length[8]');
-    //     $this->form_validation->set_rules('senha2','senha','trim|required|min_length[8]|matches[senha]');
-
-    //     if ( !empty($dados_form['login']) && !empty($dados_form['senha']) && !empty($dados_form['senha2'])  ) {
-    //         $dados_form = $this->login->create_account($dados_form['login'], $dados_form['senha'], $dados_form['senha2'], $dados_form['name'], $dados_form['email']);
-
-    //         $this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
-    //     }
-    // }
     
 }

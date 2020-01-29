@@ -19,7 +19,8 @@
         <div class="header-nav__content">
 
             <ul class="header-nav__list">
-                <li><a href="<?php echo base_url('admin/animes') ?>" title="Usuários">Animes</a></li>
+                <li><a href="<?php echo base_url('admin/animes') ?>" title="Animes">Animes</a></li>
+                <li><a href="<?php echo base_url('admin/episodios') ?>" title="Episódios">Episódios</a></li>
                 <li><a href="<?php echo base_url('admin/usuarios') ?>" title="Usuários">Usuários</a></li>
 				<li><a href="<?php echo base_url('admin/perfil') ?>" title="Perfil">Perfil</a></li>
                 <li><a href="<?php echo base_url('admin/sair') ?>" title="Sair do Sistema">Logout</a></li>
