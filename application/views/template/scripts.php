@@ -44,7 +44,7 @@ if (isset($scripts)) {
 								out += `<div class="masonry__brick col-3">`;
 								out += ` <div class="item-folio">`;
 								out += `  <a href="animes/anime/` + msg[i]['CodiAnime'] + `" class="thumb-link" title="Teste" data-size="1050x700">`;
-								out += `   <div class="item-folio__thumb" style="background-image: url('/` + msg[i]['Imagem_Destacada'] + `')"></div>`;
+								out += `   <div class="item-folio__thumb" style="background-image: url('/assets/animes/` + msg[i]['Anime'] + `/banner/` + msg[i]['Imagem_Destacada'] + `')"></div>`;
 								out += `   <div class="item-folio__text">`;
 								out += `    <h3 class="item-folio__title">` + msg[i]['Anime'] + `</h3>`;
 								out += `    <p class="item-folio__cat">` + msg[i]['Categoria'] + ` </p>`;

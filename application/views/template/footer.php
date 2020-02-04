@@ -20,12 +20,13 @@
                     <input type="email" name="email" id="email" required placeholder="Email" minlength="8">
 					<button type="submit" name="subscribe" class="btn--primary">Inscreva-se</button>
 					<div class="submit-loader">
-						<div class="text-loader">Enviando...</div>
-						<div class="s-loader">
-							<div class="bounce1"></div>
-							<div class="bounce2"></div>
-							<div class="bounce3"></div>
-						</div>
+                        <div class="text-loader">Cadastrando Email
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
 					</div>
                 </form>
 				<div class="message-warning">

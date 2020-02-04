@@ -10,7 +10,7 @@ class Search extends CI_Controller {
 	}
 
 	public function index() {
-//		echo '/home/search/Tituloteste';
+
 		$dados_form = $this->input->post();
 
 		// Regras de Validação

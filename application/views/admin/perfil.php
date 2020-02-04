@@ -43,12 +43,13 @@
 							<div class="form-field">
 								<?php echo form_submit('enviar', 'Atualizar', array('class' => 'full-width btn--primary') ) ?>
 								<div class="submit-loader">
-									<div class="text-loader">Autenticando...</div>
-									<div class="s-loader">
-										<div class="bounce1"></div>
-										<div class="bounce2"></div>
-										<div class="bounce3"></div>
-									</div>
+                                    <div class="text-loader">Atualizando
+	                                    <div class="s-loader">
+	                                        <div class="bounce1"></div>
+	                                        <div class="bounce2"></div>
+	                                        <div class="bounce3"></div>
+	                                    </div>
+                                    </div>
 								</div>
 							</div>
 						</fieldset>
