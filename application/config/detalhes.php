@@ -7,10 +7,6 @@
 
 		<?php echo $navbar ?>
 
-		<style type="text/css">
-
-		</style>
-
 		<!-- Usuarios
 		================================================== -->
 		<section id="cadastrar" class="s-contact s-usuarios">
@@ -29,60 +25,27 @@
 				<form id="formdetalhes" novalidate="novalidate">
 				
 					<div class="form-group col-12">
-	            		<input type="hidden" name="CodiAnime" value="<?php echo $anime[0]['CodiAnime'] ?>" />
-	            		<input type="hidden" name="oldname" value="<?php echo $anime[0]['Anime'] ?>" />
-	            		<input type="text" name="anime" class="Anime" area-required="true" minlength="5" required placeholder="Título do Anime" value="<?php echo $anime[0]['Anime'] ?>" />
+	            		<input type="hidden" name="codianime" value="<?php echo $episodio[0]['CodiAnime'] ?>" />
+	            		<input type="hidden" name="anime" value="<?php echo $episodio[0]['Anime'] ?>" />
+	            		<input type="hidden" name="codiepisodio" value="<?php echo $episodio[0]['CodiEpisodio'] ?>" />
+	            		<input type="text" name="episodio" class="Anime" area-required="true" minlength="5" required placeholder="Título do Episódio" value="<?php echo $episodio[0]['Titulo'] ?>" />
 	        		</div>
-					<div class="form-group col-6">
-	                    <select class="select2_Categoria form-control" name="codicategoria">
-	                    	<option></option>
-	                    	<?php foreach ( $categorias as $value ) { 
-	                    	
-	                    		if ( $anime[0]['CodiCategoria'] == $value['CodiCategoria']  ){
-
-	                    		?>
-	                    	
-		                    	<option value="<?php echo $value['CodiCategoria'] ?>" selected> <?php echo $value['Categoria'] ?> </option>
-		                    	
-		                    	<?php } else { ?>
-
-	                    		<option value="<?php echo $value['CodiCategoria'] ?>"> <?php echo $value['Categoria'] ?> </option>
-
-	                    		<?php 
-	                    		} 
-	                    	} 
-	                    	?>
-	                    </select>
-					</div>
-
-					<div class="form-group col-6">
-						<textarea type="text" name="descricao" class="descricao" rows="5" area-required="true" minlength="10" required placeholder="Breve descrição"><?php echo $anime[0]['Descricao'] ?></textarea>
-					</div>
+				
+					<div class="form-group col-12">
+	            		<input type="url" name="video" class="video" area-required="true" minlength="5" required placeholder="URL do Episódio" value="<?php echo $episodio[0]['Video'] ?>" />
+	        		</div>
 
 					<div class="form-group col-12">
-						<textarea type="text" name="texto" class="texto" rows="10" area-required="true" minlength="20" placeholder="Sinopse"><?php echo $anime[0]['Texto'] ?></textarea>
-					</div>
-
-					<div class="form-group col-12">
-						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/{$anime[0]['Anime']}/banner/{$anime[0]['Imagem_Destacada']}") ?>');">
+						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/{$episodio[0]['Anime']}/episodios/{$episodio[0]['Imagem_Destacada']}") ?>');">
 							<h2 id="h2-Foto"> Alterar imagem </h2>
 							<input type="file" id="Foto" name="imagem_destacada" />
 						</label>
 					</div>
-
-					<div class="form-group col-12">
-			            <!-- <video class="afterglow" data-autoresize="none" id="myvideo" width="1920" height="1080"> -->
-			              <!-- <source type="video/mp4" id="trailer-source" src="https://vjs.zencdn.net/v/oceans.mp4" /> -->
-			            <!-- </video> -->
-						<label class="trailer" for="Trailer" title="Selecione o Trailer">
-							Alterar Trailer
-							<input type="file" id="Trailer" name="trailer" />
-						</label>
-					</div> 
 					
 					<div class="form-group col-12">
 						<hr />
-						<button type="submit" class="bnt CadastroBtn"> Alterar </button>
+						<button type="reset" class="bnt btn-primary"> Limpar </button>
+						<button type="submit" class="bnt CadastroBtn"> Alterar Episódio </button>
 						<div class="submit-loader">
                             <div class="text-loader">Alterando
                                 <div class="s-loader">
@@ -112,9 +75,9 @@
 				<table class="table table-dark table-hover table-striped datatable-buttons" data-url="<?php echo $datatables ?>" data-delete="<?php echo $url_delete ?>" data-update="<?php echo $url_update ?>">
 				  	<thead>
 				    	<tr>
+					      	<th scope="col">Episodio</th>
 					      	<th scope="col">Anime</th>
-					      	<th scope="col">Categoria</th>
-					      	<th scope="col">DataLancamento</th>
+					      	<th scope="col">Data de Publicação</th>
 				    		<th></th>
 				    	</tr>
 				  	</thead>
@@ -130,10 +93,6 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-	        $(".select2_Categoria").select2({
-	            placeholder: "Selecione a Categoria",
-	            allowClear: true
-	        });
 
 			$('#VoltarBtn').click(function() {
 				window.location = "javascript:history.back();";
@@ -171,23 +130,23 @@
 							dataType: 'json'
 						},
 						columns: [
+							{ data: 'Titulo', name: 'Titulo' },
 							{ data: 'Anime', name: 'Anime' },
-							{ data: 'Categoria', name: 'Categoria' },
-							{ data: 'DataLancamento', name: 'DataLancamento' },
-							{ data: 'CodiAnime', name: 'CodiAnime' },
+							{ data: 'DataPublicacao', name: 'DataPublicacao' },
+							{ data: 'CodiEpisodio', name: 'CodiEpisodio' },
 						],
 						order: [[ 0, 'asc' ]],
 						rowCallback: function(row, data) {
 							$(row).css('cursor', 'pointer');
 							
-							var btnDelete = $(`<span href="${url_delete}${data.CodiAnime}" class="text-danger"><i class="fa fa-trash"></i></span>`);
+							var btnDelete = $(`<span href="${url_delete}${data.CodiEpisodio}" class="text-danger"><i class="fa fa-trash"></i></span>`);
 							$('td:eq(3)', row).html(btnDelete);
 							$('td:eq(3)', row).css('text-align', 'center');
 
 							$('td:eq(3)', row).each(function() {
 								$(this).on('click', function() {
 									$.confirm({
-									    title: `Deseja excluir ${data.Anime} ?`,
+									    title: `Deseja excluir ${data.Titulo} ?`,
 									    autoClose: 'Cancelar|8000',
 									    buttons: {
 									        deleteUser: {
@@ -198,11 +157,11 @@
 														url: btnDelete.attr('href'),
 														dataType: 'json',
 														error: function() {
-															$.alert(`Erro ao excluir a usuario ${data.Anime}!`);
+															$.alert(`Erro ao excluir a usuario ${data.Titulo}!`);
 														},
 														success: function(msg) {
 															if ( msg == 1 ){
-																$.alert(`Usuário ${data.Anime} excluído com sucesso!`);
+																$.alert(`Usuário ${data.Titulo} excluído com sucesso!`);
 																table.ajax.reload();
 															}
 															else {
@@ -222,9 +181,16 @@
 
 							$('td:eq(-3)', row).each(function() {
 								$(this).on('click', function() {
-									window.location.href = url_update + data.CodiAnime;
+									window.location.href = url_update + data.CodiEpisodio;
 								});
 							});
+
+							$('td:eq(0)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_update + data.CodiEpisodio;
+								});
+							});
+
 						},
 						drawCallback: function() {
 
@@ -318,34 +284,6 @@
 			    }
 			}
 
-			// document.getElementById('trailer').onchange = function (evt) {
-			//     var tgt = evt.target || window.event.srcElement, files = tgt.files;
-
-		 //    	if ( files[0]['type'] == 'video/mp4' ){
-			// 	    // FileReader support
-			// 	    if (FileReader && files && files.length) {
-			// 	        var fr = new FileReader();
-			// 	        fr.onload = function () {
-
-			// 	            document.getElementById('trailer-source').src = fr.result;
-
-			// 	            document.getElementById('myvideo').style.display = "block";
-		 //            		document.getElementById('h2-trailer').innerHTML = "Tentar novamente";
-			// 	        }
-			// 	        fr.readAsDataURL(files[0]);
-			// 	    }
-			// 	    else { // Not supported
-			// 	        // fallback -- perhaps submit the input to an iframe and temporarily store
-			// 	        // them on the server until the user's session ends.
-			//             document.getElementById('h2-trailer').innerHTML = "Vídeo não suportado";
-			// 	    }
-		 //    	}
-		 //    	else {
-		 //            document.getElementById('myvideo').style.display = "none";
-		 //            document.getElementById('h2-trailer').innerHTML = "É permitido apenas vídeos";
-		 //    	}
-			// }
-
 		});
 		// Datatables
 	</script>
@@ -365,7 +303,7 @@
 				$.ajax({
 					type: "POST",
                     enctype: 'multipart/form-data',
-					url: "/admin/animes/update",
+					url: "/admin/episodios/update",
 					data: data,
 					contentType: false,
 					processData: false,
@@ -379,7 +317,7 @@
 							// Message was sent
 							sLoader.slideUp("slow");
 							$('.message-warning').fadeOut();
-							$('.message-success').html("Anime Alterado com Sucesso");
+							$('.message-success').html("Episódio alterado com Sucesso");
 							$('.message-success').fadeIn();
 							setTimeout(function() {
 								$('.message-success').fadeOut();

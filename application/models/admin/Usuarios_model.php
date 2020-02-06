@@ -136,7 +136,7 @@ class Usuarios_model extends CI_Model {
         }
     }
 
-    public function remove_usuario($id_usuario) {
+    public function remove($id_usuario) {
         $query = $this->db->delete('tbl_usuarios', array('CodiUsuario' => $id_usuario));
         if ( $query == true ) {
                 return 1;

@@ -21,33 +21,28 @@ class Episodios_model extends CI_Model {
 
                 if ( !empty($foto) && $foto["error"] == 0 ){
 
-                        $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
-                        $filename = $foto["name"];
-                        $filetype = $foto["type"];
-                        $filesize = $foto["size"];
-                    
-                        // Verify file extension
-                        $ext = pathinfo( $filename, PATHINFO_EXTENSION );
-                        if(!array_key_exists($ext, $allowed)) { return "Selecione um formato de arquivo válido";  }
-                    
-                        // Verify file size - 5MB maximum
-                        $maxsize = 5 * 1024 * 1024;
-                        if ( $filesize > $maxsize ) { return "O arquivo excedeu o limite";  }
-                    
-                        // Verify MYME type of the file
-                        if(in_array($filetype, $allowed)){
-                            move_uploaded_file($foto["tmp_name"], "assets/animes/{$anime}/episodios/" . $filename);
-                            $dados_pessoais['Imagem_Destacada'] = $filename;
-                        } else{
-                            return "Ocorreu um problema ao upar o arquivo. Por favor tente novamente"; 
-                        }
-
+                    $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
+                    $filename = $foto["name"];
+                    $filetype = $foto["type"];
+                    $filesize = $foto["size"];
+                
+                    // Verify file extension
+                    $ext = pathinfo( $filename, PATHINFO_EXTENSION );
+                    if(!array_key_exists($ext, $allowed)) { return "Selecione um formato de arquivo válido";  }
+                
+                    // Verify file size - 5MB maximum
+                    $maxsize = 5 * 1024 * 1024;
+                    if ( $filesize > $maxsize ) { return "O arquivo excedeu o limite";  }
+                
+                    // Verify MYME type of the file
+                    if(in_array($filetype, $allowed)){
+                        mkdir("assets/animes/{$anime}/episodios/");
+                        move_uploaded_file($foto["tmp_name"], "assets/animes/{$anime}/episodios/" . $filename);
+                        $dados_pessoais['Imagem_Destacada'] = $filename;
+                    } else{
+                        return "Ocorreu um problema ao upar o arquivo. Por favor tente novamente"; 
+                    }
                 }
-                else {
-                    return 'Campo Imagem Destacada é necessário.'; 
-                }
-
-                // var_dump($dados_pessoais); 
 
                 $this->db->insert('tbl_episodios', $dados_pessoais);
                 return 1;

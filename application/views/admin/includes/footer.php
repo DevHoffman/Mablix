@@ -5,7 +5,7 @@
         <div class="col-twelve">
             <div class="copyright">
                 <span>© Copyright Mablix 2020</span>
-                <span>Desenvolvidor por <a href="#">Thyago Hoffman</a></span>
+                <span>Desenvolvido por <a href="#">Thyago Hoffman</a></span>
             </div>
 
             <div class="go-top">

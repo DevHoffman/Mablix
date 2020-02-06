@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'Abc12three@',
+	'hostname' => 'mysql.mablix.com.br',
+	'username' => 'mablix',
+	'password' => '39178228@Mablix',
 	'database' => 'mablix',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

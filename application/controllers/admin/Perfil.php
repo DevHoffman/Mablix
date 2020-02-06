@@ -7,7 +7,7 @@ class Perfil extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model('Selects_model', 'select');
-		$this->load->model('Updates_model', 'update');
+		$this->load->model('admin/Usuarios_model', 'usuario');
 	}
 
 	public function index() {
@@ -46,7 +46,7 @@ class Perfil extends CI_Controller {
 		}
 
 
-		$dados_form = $this->update->update_perfil($this->session->userdata['CodiUsuario'], $dados_form['name'], $dados_form['email'], $dados_form['login'], $dados_form['senha'], $dados_form['senha2'], $dados_form['Foto']);
+		$dados_form = $this->usuario->update_perfil($this->session->userdata['CodiUsuario'], $dados_form['name'], $dados_form['email'], $dados_form['login'], $dados_form['senha'], $dados_form['senha2'], $dados_form['Foto']);
 		$this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
 	}
 }

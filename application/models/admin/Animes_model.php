@@ -45,28 +45,28 @@ class Animes_model extends CI_Model {
                     
                         // Verify MYME type of the file
                         if(in_array($filetype, $allowed)){
-                            if( !is_dir("assets/animes/{$anime}/banner/") ){
-                                mkdir("assets/animes/{$anime}/banner/", 0777, true);
-                                move_uploaded_file($foto["tmp_name"], "assets/animes/{$anime}/banner/" . $filename);
-                                $dados_pessoais['Imagem_Destacada'] = $filename;
-                            }
+                            mkdir("assets/animes/{$anime}/banner", 0777, true);
+                            move_uploaded_file($foto["tmp_name"], "assets/animes/{$anime}/banner/" . $filename);
+                            $dados_pessoais['Imagem_Destacada'] = $filename;
 
                         } else{
                             return "Ocorreu um problema ao upar o arquivo. Por favor tente novamente"; exit();
                         }
-
+                }
+                else {
+                    return 'Imagem do Anime é necessário';
                 }
 
                 $this->db->insert('tbl_animes', $dados_pessoais);
                 return 1;
         }
 
-        public function update_animes($codianime, $anime, $codicategoria, $descricao, $texto = NULL, $foto, $trailer = NULL) {
+        public function update_animes($codianime, $anime, $codicategoria, $descricao, $texto = NULL, $foto, $trailer = NULL, $oldname) {
 
-            if ( empty($codianime) ) { return 'Este anime não existe.'; exit(); }
-            if ( empty($anime) ) { return 'Campo título é necessário.'; exit(); }
-            if ( empty($codicategoria) ) { return 'Campo categoria é necessário.'; exit(); }
-            if ( empty($descricao) ) { return 'Campo descrição é necessário.'; exit(); }
+            if ( empty($codianime) ) { return 'Este anime não existe.'; }
+            if ( empty($anime) ) { return 'Campo título é necessário.'; }
+            if ( empty($codicategoria) ) { return 'Campo categoria é necessário.'; }
+            if ( empty($descricao) ) { return 'Campo descrição é necessário.'; }
 
             $dados_pessoais = array(
                     'Anime'         =>      $anime,
@@ -108,22 +108,20 @@ class Animes_model extends CI_Model {
 
             }
 
-            $this->db->where('CodiAnime', $codianime)
+            // var_dump($oldname); exit();
+
+            $query = $this->db->where('CodiAnime', $codianime)
                 ->update('tbl_animes', $dados_pessoais);
-            return 1;
+            if ( $query == true ){
+                rename("assets/animes/{$oldname}", "assets/animes/{$anime}");
+                return 1;
+            }
+            else {
+                return 'Erro ao atualizar o anime';
+            }
         }
 
         public function remove_animes($codianime) {
-            $this->load->model('Selects_model', 'select');
-            $query = $this->select->findById('Anime', 'tbl_animes', array('CodiAnime' => $codianime));
-
-            if (PHP_OS === 'Windows' OR PHP_OS === 'WINNT' ) {
-                exec(sprintf("rd /s /q %s", escapeshellarg("assets/animes/{$query[0]['Anime']}")));
-            }
-            else {
-                exec(sprintf("rm -rf %s", escapeshellarg("assets/animes/{$query[0]['Anime']}")));
-            }
-
             $query = $this->db->delete('tbl_animes', array('CodiAnime' => $codianime));
             if ( $query == true ) {
                 return 1;

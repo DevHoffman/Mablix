@@ -9,8 +9,7 @@ class Usuarios extends CI_Controller {
 		$this->route = base_url('/admin/usuarios');
 		$this->load->model('Selects_model', 'select');
 		$this->load->model('Login_model', 'login');
-		$this->load->model('Removes_model', 'remove');
-		$this->load->model('Updates_model', 'update');
+		$this->load->model('admin/Usuarios_model', 'usuario');
 	}
 
 	public function index() {
@@ -77,7 +76,7 @@ class Usuarios extends CI_Controller {
 
 	public function remove($codiusuario){
 
-		$dados_form = $this->remove->remove_usuario($codiusuario);
+		$dados_form = $this->usuario->remove($codiusuario);
 
 		$this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
 	}
@@ -104,7 +103,7 @@ class Usuarios extends CI_Controller {
 
 		$dados_form = $this->input->post();
 
-		$dados_form = $this->update->update_perfil($dados_form['CodiUsuario'], $dados_form['name'], $dados_form['email'], $dados_form['login'], $dados_form['senha'], $dados_form['senha2']);
+		$dados_form = $this->usuario->update_perfil($dados_form['CodiUsuario'], $dados_form['name'], $dados_form['email'], $dados_form['login'], $dados_form['senha'], $dados_form['senha2']);
 		$this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
 	}
 

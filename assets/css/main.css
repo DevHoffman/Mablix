@@ -1045,12 +1045,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 100%;
     width: 100%;
 }
-
+/*
 #episodio #myvideo video{
-    width: auto;
-    max-width: none;
+    width: auto; 
+    max-width: none; 
 }
-
+*/
 /* ------------------------------------------------------------------- 
  * ## alert box
  * ------------------------------------------------------------------- */
@@ -2121,14 +2121,14 @@ ul.header-nav__list hr{
 }
 
 .home-social a {
-    color: white;
+    color: #39b54a;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .home-social li {
     position: relative;
-    padding: .9rem 0;
+    margin: 2rem 0;
 }
 
 .home-social li a {
@@ -2147,13 +2147,11 @@ ul.header-nav__list hr{
 
 .home-social i {
     font-size: 14px;
-    right: 0;
     text-align: center;
-    display: inline-block;
     width: 33px;
     height: 33px;
     line-height: calc(33px - 4px);
-    border: 2px solid #FFFFFF;
+    border: 2px solid #39b54a;
     border-radius: 50%;
 }
 
