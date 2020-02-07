@@ -39,7 +39,7 @@ class Selects_model extends CI_Model {
 			redirect('login', 'refresh'); 
 		}
 
-		$usuarioSessao = $this->db->select("CodiUsuario, Usuario, Login, Email, Foto")->get_where('tbl_usuarios', array("CodiUsuario" => $this->session->userdata['CodiUsuario']), 1, 0);
+		$usuarioSessao = $this->db->select("CodiUsuario, Usuario, Login, Email, Foto, CodiNivelAcesso")->get_where('tbl_usuarios', array("CodiUsuario" => $this->session->userdata['CodiUsuario']), 1, 0);
 
 		if ( empty($usuarioSessao->result_array()[0]['Usuario']) ){
 			$usuarioNome = $usuarioSessao->result_array()[0]['Login'];
@@ -58,7 +58,8 @@ class Selects_model extends CI_Model {
 			'Name' => $usuarioNome,
 			'Login' => $usuarioSessao->result_array()[0]['Login'],
 			'Email' => $usuarioSessao->result_array()[0]['Email'],
-			'Foto' => "assets/images/avatars/" . $usuarioSessao->result_array()[0]['Foto'],
+			'CodiNivelAcesso' => $usuarioSessao->result_array()[0]['CodiNivelAcesso'],
+			'Foto' => "assets/images/avatars/" . $usuarioSessao->result_array()[0]['Foto']
 		);
 
 		return $usuarioSessao;	

@@ -46,8 +46,9 @@ class Usuarios extends CI_Controller {
 		]);
 
 		$data['h1'] = "Lista de Usuários";
+		$data['usuarioNivelAcesso'] = $usuarioSessao['CodiNivelAcesso'];
 		$data['datatables'] = "{$this->route}/datatables";
-		$data['url_update'] = "{$this->route}/detalhes/";
+		$data['url_detalhes'] = "{$this->route}/detalhes/";
 		$data['url_delete'] = "{$this->route}/remove/";
 		$data['url_insert'] = "{$this->route}/insert/";
 
@@ -109,6 +110,7 @@ class Usuarios extends CI_Controller {
 	// }
 
 	public function update() {
+		
 		$dados_form = $this->input->post();
 
 		if ( !empty($_FILES['arquivo']) ){
@@ -117,8 +119,6 @@ class Usuarios extends CI_Controller {
 		else {
 			$dados_form['Foto'] = null;
 		}
-
-		// var_dump($dados_form); exit();
 
 		$dados_form = $this->usuario->update_perfil($dados_form['codiusuario'], $dados_form['name'], $dados_form['email'], $dados_form['login'], $dados_form['senha'], $dados_form['senha2'], $dados_form['Foto']);
 		$this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
@@ -158,9 +158,10 @@ class Usuarios extends CI_Controller {
 
 		$data['h1'] = "Edição de Usuários";
 		$data['datatables'] = "{$this->route}/datatables";
-		$data['url_update'] = "{$this->route}/update/";
 		$data['url_delete'] = "{$this->route}/remove/";
 		$data['url_insert'] = "{$this->route}/insert/";
+		$data['url_update'] = "{$this->route}/update/";
+		$data['url_detalhes'] = "{$this->route}/detalhes/";
 
 		$data['dados'] = $this->select->findById('CodiUsuario, Usuario, Login, Email, CodiNivelAcesso, Foto', 'tbl_usuarios', array('CodiUsuario' => $id_usuario));
 

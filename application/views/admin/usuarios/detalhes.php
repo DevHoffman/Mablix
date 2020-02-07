@@ -77,7 +77,7 @@
 		<section id="usuarios" class="s-contact s-usuarios">
 
 			<div class="row">
-				<table class="table table-dark table-hover table-striped datatable-buttons" data-url="<?php echo $datatables ?>" data-update="<?php echo $url_update ?>" data-insert="<?php echo $url_insert ?>" data-delete="<?php echo $url_delete ?>">
+				<table class="table table-dark table-hover table-striped datatable-buttons" data-url="<?php echo $datatables ?>" data-update="<?php echo $url_update ?>" data-insert="<?php echo $url_insert ?>" data-detalhes="<?php echo $url_detalhes ?>" data-delete="<?php echo $url_delete ?>">
 				  	<thead>
 				    	<tr>
 					      	<th scope="col">Nome</th>
@@ -103,6 +103,7 @@
 		var url_delete = $('.table').data('delete');
 		var url_update = $('.table').data('update');
 		var url_insert = $('.table').data('insert');
+		var url_detalhes = $('.table').data('detalhes');
 
 		$(document).ready(function() {
 			var handleDataTableButtons = function() {
@@ -130,48 +131,69 @@
 						rowCallback: function(row, data) {
 							$(row).css('cursor', 'pointer');
 							var btnDelete = $(`<span href="${url_delete}${data.CodiUsuario}" class="text-danger"><i class="fa fa-trash"></i></span>`);
-							$('td:eq(4)', row).html(btnDelete);
-							$('td:eq(4)', row).css('text-align', 'center');
 
-							$(btnDelete).click(function() {
-								$.confirm({
-								    title: `Deseja excluir ${data.Usuario} ?`,
-								    autoClose: 'Cancelar|8000',
-								    buttons: {
-								        deleteUser: {
-								            text: 'Excluir',
-								            action: function () {
-												$.ajax({
-													type: 'post',
-													url: btnDelete.attr('href'),
-													dataType: 'json',
-													error: function() {
-														$.alert(`Erro ao excluir a usuario ${data.Usuario}!`);
-													},
-													success: function(msg) {
-														if ( msg == 1 ){
-															$.alert(`Usuário ${data.Usuario} excluído com sucesso!`);
-															table.ajax.reload();
-														}
-														else {
-															$.alert(msg);
-														}
-													}
-												});
-								            }
-								        },
-								        Cancelar: function () {
-								        	return true;
-								        }
-								    }
-								});
-							});
-
-							$('td', row).each(function() {
+							$('td:eq(0)', row).each(function() {
 								$(this).on('click', function() {
-									window.location.href = url_update + data.CodiUsuario;
+									window.location.href = url_detalhes + data.CodiUsuario;
 								});
 							});
+
+							$('td:eq(1)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_detalhes + data.CodiUsuario;
+								});
+							});
+
+							$('td:eq(2)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_detalhes + data.CodiUsuario;
+								});
+							});
+
+							$('td:eq(3)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_detalhes + data.CodiUsuario;
+								});
+							});
+
+							$('td:eq(-1)', row).each(function() {
+								$(this, row).html(btnDelete);
+								$(this, row).css('text-align', 'center');
+								$(this).on('click', function() {
+									$.confirm({
+									    title: `Deseja excluir ${data.Usuario} ?`,
+									    autoClose: 'Cancelar|8000',
+									    buttons: {
+									        deleteUser: {
+									            text: 'Excluir',
+									            action: function () {
+													$.ajax({
+														type: 'post',
+														url: btnDelete.attr('href'),
+														dataType: 'json',
+														error: function() {
+															$.alert(`Erro ao excluir a usuario ${data.Usuario}!`);
+														},
+														success: function(msg) {
+															if ( msg == 1 ){
+																$.alert(`Usuário ${data.Usuario} excluído com sucesso!`);
+																table.ajax.reload();
+															}
+															else {
+																$.alert(msg);
+															}
+														}
+													});
+									            }
+									        },
+									        Cancelar: function () {
+									        	return true;
+									        }
+									    }
+									});
+								});
+							});
+
 						},
 						drawCallback: function() {
 
