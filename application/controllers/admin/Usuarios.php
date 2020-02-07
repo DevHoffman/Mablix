@@ -127,6 +127,7 @@ class Usuarios extends CI_Controller {
 	public function detalhes($id_usuario) {
 
 		$usuarioSessao = $this->select->session_start();
+		if ( $usuarioSessao['CodiNivelAcesso'] != 1 ) { echo 'Acesso Negado'; exit(); }
 
 		$page_title = "Mablix - Usuários";
 		$data['header'] = $this->TemplatePainel->header([ 
