@@ -73,7 +73,7 @@ class Usuarios_model extends CI_Model {
     }
 
     public function update_perfil($id_usuario, $name, $email, $login, $senha = NULL, $senha2 = NULL, $foto = NULL) {
-        $query = $this->db->get_where('tbl_usuarios', array('CodiUsuario <>' => $id_usuario, 'Login' => $login));
+        $query = $this->db->get_where('tbl_usuarios', array('CodiUsuario <>' => $this->session->userdata['CodiUsuario'], 'CodiUsuario <>' => $id_usuario, 'Login' => $login));
         if ( $query->num_rows() == 1 ){
             return 'Este login já existe, tente outro';
         }

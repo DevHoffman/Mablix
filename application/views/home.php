@@ -99,7 +99,7 @@
 								<div class="masonry__brick" data-aos="fade-up">
 									<div class="item-folio">
 										<a href="<?php echo base_url('animes/anime/' . $value['CodiAnime']) ?>" class="thumb-link" title="<?php echo $value['Anime'] ?>" data-size="1050x700">
-											<div class="item-folio__thumb" style="background-image: url('<?php echo base_url("assets/animes/{$value['Anime']}/banner/" . $value['Imagem_Destacada']) ?>')"></div>
+											<div class="item-folio__thumb" style="background-image: url('<?php echo base_url("assets/animes/" . $value['Imagem_Destacada']) ?>')"></div>
 											<div class="item-folio__text">
 												<h3 class="item-folio__title">
 													<?php echo $value['Anime'] ?>
@@ -144,7 +144,7 @@
 						<div class="item-folio">
 
 							<a href="<?php echo base_url('animes/anime/' . $value['CodiAnime']) ?>" class="thumb-link" title="<?php echo $value['Anime'] ?>" data-size="1050x700">
-								<div class="item-folio__thumb" style="background-image: url('<?php echo base_url("assets/animes/{$value['Anime']}/banner/" . $value['Imagem_Destacada']) ?>')"></div>
+								<div class="item-folio__thumb" style="background-image: url('<?php echo base_url("assets/animes/" . $value['Imagem_Destacada']) ?>')"></div>
 								<div class="item-folio__text">
 									<h3 class="item-folio__title">
 										<?php echo $value['Anime'] ?>

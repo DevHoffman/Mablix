@@ -105,7 +105,7 @@ class Animes extends CI_Controller {
 			  	<div class="masonry__brick col-3" data-aos="fade-up">
 		            <div class="item-folio">
 		              	<a href="' . base_url("animes/anime/" . $value['CodiAnime']) . '" class="thumb-link" title="' . $value['Anime'] . '" data-size="1050x700">
-			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/{$value["Anime"]}/banner/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
+			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
 			                <div class="item-folio__text">
 			                  	<h3 class="item-folio__title">' . $value["Anime"] . '</h3>
 			                  	<p class="item-folio__cat">' . $value["Categoria"] . '</p>
@@ -130,7 +130,7 @@ class Animes extends CI_Controller {
 			  	<div class="masonry__brick col-3" data-aos="fade-up">
 		            <div class="item-folio">
 		              	<a href="' . base_url("animes/episodio/" . $value['CodiEpisodio']) . '" class="thumb-link" title="' . $value['Titulo'] . '" data-size="1050x700">
-			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/{$value["Anime"]}/episodios/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
+			                <div class="item-folio__thumb" style="background-image: url(' . "'" . base_url("assets/animes/episodios/" . $value["Imagem_Destacada"]) . "'" . ')"></div>
 			                <div class="item-folio__text">
 			                  	<p class="item-folio__cat">' . $value["Anime"] . '</p>
 			                  	<h3 class="item-folio__title">' . $value["Titulo"] . '</h3>

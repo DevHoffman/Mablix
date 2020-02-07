@@ -7,14 +7,14 @@
 
 		<!-- Animes
 		================================================== -->
-        <section id="episodio" class="s-home target-section" data-parallax="scroll" data-image-src="<?php echo base_url("assets/animes/{$Anime}/episodios/" . $Imagem_Destacada) ?>" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <section id="episodio" class="s-home target-section" data-parallax="scroll" data-image-src="<?php echo base_url("assets/animes/episodios/" . $Imagem_Destacada) ?>" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
             <!-- <a href="#0" class="header-nav__close" title="Fechar"><span>Fechar</span></a> -->
 
             <div class="overlay"></div>
             <div class="shadow-overlay"></div>
 
-            <video class="afterglow" data-autoresize="none" id="myvideo" poster="<?php echo base_url("assets/animes/{$Anime}/episodios/" . $Imagem_Destacada) ?>" width="1920" height="1080" autoplay="autoplay" preload="auto">
+            <video class="afterglow" data-autoresize="none" id="myvideo" poster="<?php echo base_url("assets/animes/episodios/" . $Imagem_Destacada) ?>" width="1920" height="1080" autoplay="autoplay" preload="auto">
               <source type="video/mp4" src="<?php echo $Video ?>" />
             </video>
             <!-- <a class="afterglow" href="#myvideo">Launch lightbox</a> -->

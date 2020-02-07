@@ -7,7 +7,7 @@
 
 		<?php echo $navbar ?>
 
-		<!-- Usuários
+		<!-- Perfil
 		================================================== -->
 		<section id="perfil" class="s-contact s-usuarios">
 
@@ -140,7 +140,6 @@
 				});
 			}
 		});
-
 
 		document.getElementById('Foto').onchange = function (evt) {
 		    var tgt = evt.target || window.event.srcElement,

@@ -26,11 +26,10 @@
 	        </div>
 
 	        <div class="row section-header ">
-				<form id="formdetalhes" novalidate="novalidate">
+				<form id="formdetalhes" novalidate="novalidate" enctype="multipart/form-data">
 				
 					<div class="form-group col-12">
 	            		<input type="hidden" name="CodiAnime" value="<?php echo $anime[0]['CodiAnime'] ?>" />
-	            		<input type="hidden" name="oldname" value="<?php echo $anime[0]['Anime'] ?>" />
 	            		<input type="text" name="anime" class="Anime" area-required="true" minlength="5" required placeholder="Título do Anime" value="<?php echo $anime[0]['Anime'] ?>" />
 	        		</div>
 					<div class="form-group col-6">
@@ -64,7 +63,7 @@
 					</div>
 
 					<div class="form-group col-12">
-						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/{$anime[0]['Anime']}/banner/{$anime[0]['Imagem_Destacada']}") ?>');">
+						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/{$anime[0]['Imagem_Destacada']}") ?>');">
 							<h2 id="h2-Foto"> Alterar imagem </h2>
 							<input type="file" id="Foto" name="imagem_destacada" />
 						</label>
@@ -221,6 +220,12 @@
 							});
 
 							$('td:eq(-3)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_update + data.CodiAnime;
+								});
+							});
+
+							$('td:eq(0)', row).each(function() {
 								$(this).on('click', function() {
 									window.location.href = url_update + data.CodiAnime;
 								});

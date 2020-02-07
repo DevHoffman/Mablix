@@ -21,27 +21,44 @@ class Episodios_model extends CI_Model {
 
                 if ( !empty($foto) && $foto["error"] == 0 ){
 
+                    date_default_timezone_set('America/Sao_Paulo');
+
+                    $ano = date('Y', time());
+                    $mes = date('m', time());
+                    $data = date('HmidmY', time());
+            
+                    if ( !is_dir("assets/animes/episodios/{$ano}/{$mes}/imagem_destacada") ) {
+                        mkdir("assets/animes/episodios/{$ano}/{$mes}/imagem_destacada", 0777, true);
+                    }
+
+                    if ( !is_dir("assets/animes/episodios/{$ano}/{$mes}/video") ) {
+                        mkdir("assets/animes/episodios/{$ano}/{$mes}/video", 0777, true);
+                    }
+
                     $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");
-                    $filename = $foto["name"];
+                    $filename = $data . '-' . $foto["name"];
                     $filetype = $foto["type"];
                     $filesize = $foto["size"];
                 
                     // Verify file extension
                     $ext = pathinfo( $filename, PATHINFO_EXTENSION );
-                    if(!array_key_exists($ext, $allowed)) { return "Selecione um formato de arquivo válido";  }
+                    if(!array_key_exists($ext, $allowed)) { return "Selecione um formato de arquivo válido"; exit(); }
                 
                     // Verify file size - 5MB maximum
                     $maxsize = 5 * 1024 * 1024;
-                    if ( $filesize > $maxsize ) { return "O arquivo excedeu o limite";  }
+                    if ( $filesize > $maxsize ) { return "O arquivo excedeu o limite"; exit(); }
                 
                     // Verify MYME type of the file
                     if(in_array($filetype, $allowed)){
-                        mkdir("assets/animes/{$anime}/episodios/");
-                        move_uploaded_file($foto["tmp_name"], "assets/animes/{$anime}/episodios/" . $filename);
+                        $filename = "{$ano}/{$mes}/imagem_destacada/" . $filename;
+                        move_uploaded_file($foto["tmp_name"], "assets/animes/episodios/" . $filename);
                         $dados_pessoais['Imagem_Destacada'] = $filename;
                     } else{
-                        return "Ocorreu um problema ao upar o arquivo. Por favor tente novamente"; 
+                        return "Ocorreu um problema ao upar o arquivo. Por favor tente novamente"; exit();
                     }
+                }
+                else {
+                    return 'Imagem do episódio é necessária';
                 }
 
                 $this->db->insert('tbl_episodios', $dados_pessoais);

@@ -28,7 +28,6 @@
 					      	<th scope="col">Email</th>
 					      	<th scope="col">Nível de Acesso</th>
 				    		<th></th>
-				    		<th></th>
 				    	</tr>
 				  	</thead>
 				</table>
@@ -69,14 +68,13 @@
 							{ data: 'Email', name: 'Email' },
 							{ data: 'NivelAcesso', name: 'NivelAcesso' },
 							{ data: 'CodiUsuario', name: 'CodiUsuario' },
-							{ data: 'CodiUsuario', name: 'CodiUsuario' },
 						],
 						order: [[ 0, 'asc' ]],
 						rowCallback: function(row, data) {
 							$(row).css('cursor', 'pointer');
 							var btnDelete = $(`<span href="${url_delete}${data.CodiUsuario}" class="text-danger"><i class="fa fa-trash"></i></span>`);
-							$('td:eq(5)', row).html(btnDelete);
-							$('td:eq(5)', row).css('text-align', 'center');
+							$('td:eq(4)', row).html(btnDelete);
+							$('td:eq(4)', row).css('text-align', 'center');
 
 							$(btnDelete).click(function() {
 								$.confirm({
@@ -112,94 +110,9 @@
 								});
 							});
 
-							var btnUpdate = $(`<span href="${url_update}${data.CodiUsuario}" class="text-danger"><i class="fa fa-edit"></i></span>`);
-							$('td:eq(4)', row).html(btnUpdate);
-							$('td:eq(4)', row).css('text-align', 'center');
-							$(btnUpdate).click(function() {
-								$.confirm({
-								    title: 'Alterar Usuário',
-								    content: 
-								    '<form id="formcadastro" novalidate="novalidate" class="formName">' +
-									    '<div class="form-group">' +
-									    	'<input type="hidden" name="CodiUsuario" value="' + data.CodiUsuario + '" />' +
-									    	'<input type="text" name="name" placeholder="Nome" autofocus class="full-width name" required area-required="true" minlength="3" value="' + data.Usuario + '" />' +
-									    '</div>' +
-									    '<div class="form-group">' +
-									    	'<input type="email" name="email" placeholder="Email" class="full-width email" required area-required="true" minlength="8" value="' + data.Email + '" />' +
-									    '</div>' +
-									    '<div class="form-group">' +
-									    	'<input type="text" name="login" placeholder="Login" class="full-width login" required area-required="true" minlength="3" value="' + data.Login + '" />' +
-									    '</div>' +
-									    '<div class="form-group">' +
-									    	'<input type="password" name="senha" placeholder="Senha" class="full-width senha" required area-required="true" minlength="8" />' +
-									    '</div>' +
-									    '<div class="form-group">' +
-									    	'<input type="password" name="senha2" placeholder="Confirmar Senha" class="full-width senha2" required area-required="true" minlength="8" />' +
-									    '</div>' +
-								    '</form>',
-								    buttons: {
-								        formSubmit: {
-								            text: 'Alterar',
-								            btnClass: 'btn--primary',
-								            action: function () {
-								                var name = this.$content.find('.name').val();
-								                if( name.length <= 3 ){
-								                    $.alert('Nome inválido, deve conter no mínimo 3 caracteres.');
-								                    return false;
-								                }
-								                var email = this.$content.find('.email').val();
-								                if( email.length <= 7 ){
-								                    $.alert('Email inválido, deve conter no mínimo 8 caracteres');
-								                    return false;
-								                }
-								                var login = this.$content.find('.login').val();
-								                if( login.length <= 3 ){
-								                    $.alert('Login inválido, deve conter no mínimo 3 caracteres.');
-								                    return false;
-								                }
-								                var senha = this.$content.find('.senha').val();
-								                var senha2 = this.$content.find('.senha2').val();
-								                if ( senha != senha2 ){
-								                	$.alert('As senhas devem ser iguais');
-								                	return false;
-								                }
-
-												$.ajax({
-
-													type: "POST",
-													url: `${url_update}`,
-													data: $('#formcadastro').serialize(),
-													beforeSend: function() {
-
-													},
-													success: function(msg) {
-														if ( msg == 1 ) {
-						                					$.alert('Usuário <b>' + name + '</b> alterado com sucesso!');
-															table.ajax.reload();
-														}
-														else{
-						                					$.alert(msg);
-														}
-													},
-													error: function(msg) {
-						                				$.alert('Algo deu errado, tente novamente.');
-													}
-												});
-								            }
-								        },
-								        cancelar: function () {
-								            return true;
-								        },
-								    },
-								    onContentReady: function () {
-								        // bind to events
-								        var jc = this;
-								        this.$content.find('form').on('submit', function (e) {
-								            // if the user submits the form by pressing enter in the field.
-								            e.preventDefault();
-								            jc.$$formSubmit.trigger('click'); // reference the button and click it
-								        });
-								    }
+							$('td', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_update + data.CodiUsuario;
 								});
 							});
 						},

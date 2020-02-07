@@ -207,6 +207,12 @@
 									window.location.href = url_update + data.CodiAnime;
 								});
 							});
+
+							$('td:eq(0)', row).each(function() {
+								$(this).on('click', function() {
+									window.location.href = url_update + data.CodiAnime;
+								});
+							});
 						},
 						drawCallback: function() {
 

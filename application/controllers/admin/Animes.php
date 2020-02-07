@@ -111,19 +111,19 @@ class Animes extends CI_Controller {
         $dados_form = $this->input->post();
         $dados_form['foto'] = $_FILES['imagem_destacada'];
         $dados_form['trailer'] = $_FILES['trailer'];
-        // var_dump($dados_form['oldname']); exit();
+
+        // var_dump($dados_form); exit();
 
         // Regras de Validação
         $this->form_validation->set_rules('CodiAnime', 'CodiAnime', 'trim|required');
         $this->form_validation->set_rules('anime', 'anime', 'trim|required|min_length[5]');
-        $this->form_validation->set_rules('oldname', 'oldname', 'trim|required');
         $this->form_validation->set_rules('codicategoria', 'codicategoria', 'trim|required|min_length[1]');
         $this->form_validation->set_rules('descricao','descricao','trim|required|min_length[10]');
         $this->form_validation->set_rules('texto','texto','trim|min_length[20]');
         $this->form_validation->set_rules('imagem_destacada','imagem_destacada','trim');
         $this->form_validation->set_rules('trailer','trailer','trim');
 
-        $dados_form = $this->animes->update_animes($dados_form['CodiAnime'], $dados_form['anime'], $dados_form['codicategoria'], $dados_form['descricao'], $dados_form['texto'], $dados_form['foto'], $dados_form['trailer']['name'], $dados_form['oldname']);
+        $dados_form = $this->animes->update_animes($dados_form['CodiAnime'], $dados_form['anime'], $dados_form['codicategoria'], $dados_form['descricao'], $dados_form['texto'], $dados_form['foto'], $dados_form['trailer']['name']);
     	$this->output->set_content_type('application/json')->set_output(json_encode($dados_form));
     }
 
