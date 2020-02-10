@@ -11,6 +11,7 @@
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <script src="<?php echo base_url('assets/js/pace.min.js') ?>"></script>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/base.css') ?>" />

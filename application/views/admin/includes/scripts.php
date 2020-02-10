@@ -5,7 +5,6 @@
 <!-- script
 ================================================== -->
 <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
-<script src="<?php echo base_url('assets/js/pace.min.js') ?>"></script>
 
 <script type="text/javascript">
     $(window).scroll(function() {

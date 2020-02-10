@@ -77,11 +77,13 @@
 	<?php echo $scripts ?>
 
 	<script>
+
 	  	$(document).ready(function(){
 
 		    var limit = 7;
 		    var start = 0;
 		    var action = 'inactive';
+			var id_anime = "<?php echo $CodiAnime ?>";
 
 		    function lazzy_loader(limit){
 		      	var output = '';
@@ -98,7 +100,7 @@
 
 		    function load_data(limit, start) {
 		      	$.ajax({
-			        url: "/animes/get_episodios",
+			        url: "/animes/get_episodios/" + id_anime,
 			        method:"POST",
 			        data:{limit:limit, start:start},
 			        cache: false,

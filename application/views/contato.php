@@ -128,7 +128,6 @@
 
         <?php echo $footer ?>
 
-
 		<?php echo $scripts ?>
 
 		<script type="text/javascript">
@@ -178,7 +177,6 @@
 				}
 
 			});
-
 		</script>
 
     </body>

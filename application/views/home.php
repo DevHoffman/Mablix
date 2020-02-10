@@ -189,20 +189,6 @@
         <?php echo $footer ?>
         <!-- end footer -->
 
-        <!-- preloader
-        ================================================== -->
-        <div id="preloader">
-            <div id="loader">
-                <div class="line-scale-pulse-out">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
         <!-- Java Script
         ================================================== -->
         <?php echo $scripts ?>

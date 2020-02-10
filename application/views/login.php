@@ -57,7 +57,22 @@
 
         </section> 
 
+		<!-- preloader
+		================================================== -->
+		<div id="preloader">
+		    <div id="loader">
+		        <div class="line-scale-pulse-out">
+		            <div></div>
+		            <div></div>
+		            <div></div>
+		            <div></div>
+		            <div></div>
+		        </div>
+		    </div>
+		</div>
+
     </body>
+    
     <?php echo $scripts ?>
 
 	<!-- Formulários de Contato -->
@@ -172,7 +187,6 @@
 		// 		});
 		// 	}
 		// });
-
 	</script>
 
 </html> 

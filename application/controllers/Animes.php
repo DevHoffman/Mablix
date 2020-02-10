@@ -71,6 +71,7 @@ class Animes extends CI_Controller {
 		$data['h3'] = $data['rows_post'][0]['Categoria'];
 		$data['h1'] = $data['rows_post'][0]['Anime'];
 		$data['anime'] = $data['rows_post'][0]['Anime'];
+		$data['CodiAnime'] = $data['rows_post'][0]['CodiAnime'];
 		$data['Imagem_Destacada'] = $data['rows_post'][0]['Imagem_Destacada'];
 
 		$this->load->view('page_episodios', $data);
@@ -121,10 +122,10 @@ class Animes extends CI_Controller {
 		echo $output;
 	}
 
-	public function get_episodios() {
+	public function get_episodios($id_anime) {
 		$output = '';
-		$rows_post = $this->query->load_more_episodios($this->input->post('limit'), $this->input->post('start'));
-
+		
+		$rows_post = $this->query->load_more_episodios($id_anime, $this->input->post('limit'), $this->input->post('start'));
 		foreach($rows_post as $value) {
 		  	$output .= '
 			  	<div class="masonry__brick col-3" data-aos="fade-up">

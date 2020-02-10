@@ -19,9 +19,10 @@ class Query_posts_model extends CI_Model
             return $query->result_array();
     }
 
-    public function load_more_episodios($limit, $start) {
+    public function load_more_episodios($id_anime, $limit, $start) {
             $query = $this->db->select('CodiEpisodio, Titulo, Anime, E.Imagem_Destacada, Video')
             ->join('tbl_animes A', "A.CodiAnime = E.CodiAnime")
+            ->where('A.CodiAnime', $id_anime)
             ->order_by("E.CodiAnime", "DESC")
             ->limit($limit, $start)
             ->get('tbl_episodios E');
