@@ -23,7 +23,7 @@ class Query_posts_model extends CI_Model
             $query = $this->db->select('CodiEpisodio, Titulo, Anime, E.Imagem_Destacada, Video')
             ->join('tbl_animes A', "A.CodiAnime = E.CodiAnime")
             ->where('A.CodiAnime', $id_anime)
-            ->order_by("E.CodiAnime", "DESC")
+            ->order_by("E.Titulo", "DESC")
             ->limit($limit, $start)
             ->get('tbl_episodios E');
             return $query->result_array();

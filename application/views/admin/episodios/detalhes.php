@@ -36,7 +36,7 @@
 	        		</div>
 
 					<div class="form-group col-12">
-						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/{$episodio[0]['Anime']}/episodios/{$episodio[0]['Imagem_Destacada']}") ?>');">
+						<label class="header-nav_perfil" title="Selecione a Imagem" id="FotoTMP" for="Foto" style="background-image: url('<?php echo base_url("assets/animes/episodios/{$episodio[0]['Imagem_Destacada']}") ?>');">
 							<h2 id="h2-Foto"> Alterar imagem </h2>
 							<input type="file" id="Foto" name="imagem_destacada" />
 						</label>
