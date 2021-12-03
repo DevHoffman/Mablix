@@ -89,7 +89,7 @@
 				$.ajax({
 
 					type: "POST",
-					url: "/login/autenticate",
+					url: "login/autenticate",
 					data: $(form).serialize(),
 					beforeSend: function() {
 
