@@ -1,0 +1,19 @@
+ not specified.
+   * @opt_param string metric Numeric columns to include in the report.
+   * @opt_param int maxResults The maximum number of rows of report data to
+   * return.
+   * @opt_param string filter Filters to be run on the report.
+   * @opt_param string currency Optional currency to use when reporting on
+   * monetary metrics. Defaults to the account's currency if not set.
+   * @opt_param int startIndex Index of the first row of report data to return.
+   * @opt_param bool useTimezoneReporting Whether the report should be generated
+   * in the AdSense account's local timezone. If false default PST/PDT timezone
+   * will be used.
+   * @opt_param string dimension Dimensions to base the report on.
+   * @opt_param string accountId Accounts upon which to report.
+   * @return Google_Service_AdSense_AdsenseReportsGenerateResponse
+   */
+  public function generate($startDate, $endDate, $optParams = array())
+  {
+    $params = array('startDate' => $startDate, 'endDate' => $endDate);
+    $params = array_merge($

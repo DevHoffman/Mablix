@@ -1,0 +1,21 @@
+pe
+                    options = {
+                        style: {}
+                    };
+
+                    // If not a leaf, then label should be disabled as default
+                    if (!point.node.isLeaf) {
+                        options.enabled = false;
+                    }
+
+                    // If options for level exists, include them as well
+                    if (level && level.dataLabels) {
+                        options = merge(options, level.dataLabels);
+                        series._hasPointLabels = true;
+                    }
+
+                    // Set dataLabel width to the width of the point shape.
+                    if (point.shapeArgs) {
+                        options.style.width = point.shapeArgs.width;
+                        if (point.dataLabel) {
+ 

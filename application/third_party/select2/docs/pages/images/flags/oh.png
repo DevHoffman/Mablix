@@ -1,0 +1,174 @@
+          /**
+                     * The pixel stroke width of the symbol on the button.
+                     * 
+                     * @type {Number}
+                     * @sample {highcharts} highcharts/navigation/buttonoptions-height/ Bigger buttons
+                     * @sample {highstock} highcharts/navigation/buttonoptions-height/ Bigger buttons
+                     * @sample {highmaps} highcharts/navigation/buttonoptions-height/ Bigger buttons
+                     * @default 1
+                     * @since 2.0
+                     */
+                    symbolStrokeWidth: 3,
+
+                    /**
+                     * A configuration object for the button theme. The object accepts
+                     * SVG properties like `stroke-width`, `stroke` and `fill`. Tri-state
+                     * button styles are supported by the `states.hover` and `states.select`
+                     * objects.
+                     * 
+                     * @type {Object}
+                     * @sample {highcharts} highcharts/navigation/buttonoptions-theme/ Theming the buttons
+                     * @sample {highstock} highcharts/navigation/buttonoptions-theme/ Theming the buttons
+                     * @sample {highmaps} highcharts/navigation/buttonoptions-theme/ Theming the buttons
+                     * @since 3.0
+                     */
+                    theme: {
+                        /**
+                         * The default fill exists only to capture hover events.
+                         * @type {String}
+                         */
+                        fill: '#ffffff',
+                        /**
+                         * @type {String}
+                         */
+                        stroke: 'none',
+                        /**
+                         * @type {Number}
+                         * @default 5
+                         */
+                        padding: 5
+                    }
+                }
+            });
+
+
+
+        // Add the export related options
+
+        /**
+         * Options for the exporting module. For an overview on the matter, see [the docs](http://www.highcharts.com/docs/export-module/export-module-overview).
+         * @type {Object}
+         * @optionparent exporting
+         */
+        defaultOptions.exporting = {
+
+            /**
+             * Experimental setting to allow HTML inside the chart (added through
+             * the `useHTML` options), directly in the exported image. This allows
+             * you to preserve complicated HTML structures like tables or bi-directional
+             * text in exported charts.
+             * 
+             * Disclaimer: The HTML is rendered in a `foreignObject` tag in the
+             * generated SVG. The official export server is based on PhantomJS,
+             * which supports this, but other SVG clients, like Batik, does not
+             * support it. This also applies to downloaded SVG that you want to
+             * open in a desktop client.
+             * 
+             * @type {Boolean}
+             * @default false
+             * @since 4.1.8
+             * @apioption exporting.allowHTML
+             */
+
+            /**
+             * Additional chart options to be merged into an exported chart. For
+             * example, a common use case is to add data labels to improve readability
+             * of the exported chart, or to add a printer-friendly color scheme.
+             * 
+             * @type {Object}
+             * @sample {highcharts} highcharts/exporting/chartoptions-data-labels/
+             *         Added data labels
+             * @sample {highstock} highcharts/exporting/chartoptions-data-labels/
+             *         Added data labels
+             * @default null
+             * @apioption exporting.chartOptions
+             */
+
+            /**
+             * Whether to enable the exporting module. Disabling the module will
+             * hide the context button, but API methods will still be available.
+             * 
+             * @type {Boolean}
+             * @sample {highcharts} highcharts/exporting/enabled-false/
+             *         Exporting module is loaded but disabled
+             * @sample {highstock} highcharts/exporting/enabled-false/
+             *         Exporting module is loaded but disabled
+             * @default true
+             * @since 2.0
+             * @apioption exporting.enabled
+             */
+
+            /**
+             * Function to call if the offline-exporting module fails to export
+             * a chart on the client side, and [fallbackToExportServer](#exporting.
+             * fallbackToExportServer) is disabled. If left undefined, an exception
+             * is thrown instead.
+             * 
+             * @type {Function}
+             * @see [fallbackToExportServer](#exporting.fallbackToExportServer)
+             * @default undefined
+             * @since 5.0.0
+             * @apioption exporting.error
+             */
+
+            /**
+             * Whether or not to fall back to the export server if the offline-exporting
+             * module is unable to export the chart on the client side.
+             * 
+             * @type {Boolean}
+             * @default true
+             * @since 4.1.8
+             * @apioption exporting.fallbackToExportServer
+             */
+
+            /**
+             * The filename, without extension, to use for the exported chart.
+             * 
+             * @type {String}
+             * @sample {highcharts} highcharts/exporting/filename/ Custom file name
+             * @sample {highstock} highcharts/exporting/filename/ Custom file name
+             * @default chart
+             * @since 2.0
+             * @apioption exporting.filename
+             */
+
+            /**
+             * An object containing additional attributes for the POST form that
+             * sends the SVG to the export server. For example, a `target` can be
+             * set to make sure the generated image is received in another frame,
+             *  or a custom `enctype` or `encoding` can be set.
+             * 
+             * @type {Object}
+             * @since 3.0.8
+             * @apioption exporting.formAttributes
+             */
+
+            /**
+             * Path where Highcharts will look for export module dependencies to
+             * load on demand if they don't already exist on `window`. Should currently
+             * point to location of [CanVG](https://github.com/canvg/canvg) library,
+             * [RGBColor.js](https://github.com/canvg/canvg), [jsPDF](https://github.
+             * com/yWorks/jsPDF) and [svg2pdf.js](https://github.com/yWorks/svg2pdf.
+             * js), required for client side export in certain browsers.
+             * 
+             * @type {String}
+             * @default https://code.highcharts.com/{version}/lib
+             * @since 5.0.0
+             * @apioption exporting.libURL
+             */
+
+            /**
+             * Analogous to [sourceWidth](#exporting.sourceWidth).
+             * 
+             * @type {Number}
+             * @since 3.0
+             * @apioption exporting.sourceHeight
+             */
+
+            /**
+             * The width of the original chart when exported, unless an explicit
+             * [chart.width](#chart.width) is set. The width exported raster image
+             * is then multiplied by [scale](#exporting.scale).
+             * 
+             * @type {Number}
+             * @sample {highcharts} highcharts/export

@@ -353,7 +353,7 @@
 				$.ajax({
 					type: "POST",
                     enctype: 'multipart/form-data',
-					url: "/admin/animes/insert",
+					url: "<?= base_url('admin/animes/insert')?>",
 					data: data,
 					contentType: false,
 					processData: false,

@@ -1,0 +1,599 @@
+0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"],
+    "child": [384, 512, [], "f1ae", "M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"],
+    "church": [640, 512, [], "f51d", "M464.46 246.68L352 179.2V128h48c8.84 0 16-7.16 16-16V80c0-8.84-7.16-16-16-16h-48V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v48h-48c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h48v51.2l-112.46 67.48A31.997 31.997 0 0 0 160 274.12V512h96v-96c0-35.35 28.65-64 64-64s64 28.65 64 64v96h96V274.12c0-11.24-5.9-21.66-15.54-27.44zM0 395.96V496c0 8.84 7.16 16 16 16h112V320L19.39 366.54A32.024 32.024 0 0 0 0 395.96zm620.61-29.42L512 320v192h112c8.84 0 16-7.16 16-16V395.96c0-12.8-7.63-24.37-19.39-29.42z"],
+    "circle": [512, 512, [], "f111", "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"],
+    "circle-notch": [512, 512, [], "f1ce", "M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z"],
+    "city": [640, 512, [], "f64f", "M616 192H480V24c0-13.26-10.74-24-24-24H312c-13.26 0-24 10.74-24 24v72h-64V16c0-8.84-7.16-16-16-16h-16c-8.84 0-16 7.16-16 16v80h-64V16c0-8.84-7.16-16-16-16H80c-8.84 0-16 7.16-16 16v80H24c-13.26 0-24 10.74-24 24v360c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V216c0-13.26-10.75-24-24-24zM128 404c0 6.63-5.37 12-12 12H76c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12H76c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12H76c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm128 192c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm160 96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12V76c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm160 288c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40zm0-96c0 6.63-5.37 12-12 12h-40c-6.63 0-12-5.37-12-12v-40c0-6.63 5.37-12 12-12h40c6.63 0 12 5.37 12 12v40z"],
+    "clinic-medical": [576, 512, [], "f7f2", "M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"],
+    "clipboard": [384, 512, [], "f328", "M384 112v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h80c0-35.29 28.71-64 64-64s64 28.71 64 64h80c26.51 0 48 21.49 48 48zM192 40c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24m96 114v-20a6 6 0 0 0-6-6H102a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h180a6 6 0 0 0 6-6z"],
+    "clipboard-check": [384, 512, [], "f46c", "M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm121.2 231.8l-143 141.8c-4.7 4.7-12.3 4.6-17-.1l-82.6-83.3c-4.7-4.7-4.6-12.3.1-17L99.1 285c4.7-4.7 12.3-4.6 17 .1l46 46.4 106-105.2c4.7-4.7 12.3-4.6 17 .1l28.2 28.4c4.7 4.8 4.6 12.3-.1 17z"],
+    "clipboard-list": [384, 512, [], "f46d", "M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM96 424c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm96-192c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm128 368c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"],
+    "clock": [512, 512, [], "f017", "M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"],
+    "clone": [512, 512, [], "f24d", "M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z"],
+    "closed-captioning": [512, 512, [], "f20a", "M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM218.1 287.7c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.6 56.8-172.8 32.1-172.8-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7l-17.5 30.5c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2.1 48 51.1 70.5 92.3 32.6zm190.4 0c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.5 56.9-172.7 32.1-172.7-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7L420 222.2c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2 0 48 51 70.5 92.2 32.6z"],
+    "cloud": [640, 512, [], "f0c2", "M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z"],
+    "cloud-download-alt": [640, 512, [], "f381", "M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zm-132.9 88.7L299.3 420.7c-6.2 6.2-16.4 6.2-22.6 0L171.3 315.3c-10.1-10.1-2.9-27.3 11.3-27.3H248V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v112h65.4c14.2 0 21.4 17.2 11.3 27.3z"],
+    "cloud-meatball": [512, 512, [], "f73b", "M48 352c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm416 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-119 11.1c4.6-14.5 1.6-30.8-9.8-42.3-11.5-11.5-27.8-14.4-42.3-9.9-7-13.5-20.7-23-36.9-23s-29.9 9.5-36.9 23c-14.5-4.6-30.8-1.6-42.3 9.9-11.5 11.5-14.4 27.8-9.9 42.3-13.5 7-23 20.7-23 36.9s9.5 29.9 23 36.9c-4.6 14.5-1.6 30.8 9.9 42.3 8.2 8.2 18.9 12.3 29.7 12.3 4.3 0 8.5-1.1 12.6-2.5 7 13.5 20.7 23 36.9 23s29.9-9.5 36.9-23c4.1 1.3 8.3 2.5 12.6 2.5 10.8 0 21.5-4.1 29.7-12.3 11.5-11.5 14.4-27.8 9.8-42.3 13.5-7 23-20.7 23-36.9s-9.5-29.9-23-36.9zM512 224c0-53-43-96-96-96-.6 0-1.1.2-1.6.2 1.1-5.2 1.6-10.6 1.6-16.2 0-44.2-35.8-80-80-80-24.6 0-46.3 11.3-61 28.8C256.4 24.8 219.3 0 176 0 114.1 0 64 50.1 64 112c0 7.3.8 14.3 2.1 21.2C27.8 145.8 0 181.5 0 224c0 53 43 96 96 96h43.4c3.6-8 8.4-15.4 14.8-21.8 13.5-13.5 31.5-21.1 50.8-21.3 13.5-13.2 31.7-20.9 51-20.9s37.5 7.7 51 20.9c19.3.2 37.3 7.8 50.8 21.3 6.4 6.4 11.3 13.8 14.8 21.8H416c53 0 96-43 96-96z"],
+    "cloud-moon": [576, 512, [], "f6c3", "M342.8 352.7c5.7-9.6 9.2-20.7 9.2-32.7 0-35.3-28.7-64-64-64-17.2 0-32.8 6.9-44.3 17.9-16.3-29.6-47.5-49.9-83.7-49.9-53 0-96 43-96 96 0 2 .5 3.8.6 5.7C27.1 338.8 0 374.1 0 416c0 53 43 96 96 96h240c44.2 0 80-35.8 80-80 0-41.9-32.3-75.8-73.2-79.3zm222.5-54.3c-93.1 17.7-178.5-53.7-178.5-147.7 0-54.2 29-104 76.1-130.8 7.3-4.1 5.4-15.1-2.8-16.7C448.4 1.1 436.7 0 425 0 319.1 0 233.1 85.9 233.1 192c0 8.5.7 16.8 1.8 25 5.9 4.3 11.6 8.9 16.7 14.2 11.4-4.7 23.7-7.2 36.4-7.2 52.9 0 96 43.1 96 96 0 3.6-.2 7.2-.6 10.7 23.6 10.8 42.4 29.5 53.5 52.6 54.4-3.4 103.7-29.3 137.1-70.4 5.3-6.5-.5-16.1-8.7-14.5z"],
+    "cloud-moon-rain": [576, 512, [], "f73c", "M350.5 225.5c-6.9-37.2-39.3-65.5-78.5-65.5-12.3 0-23.9 3-34.3 8-17.4-24.1-45.6-40-77.7-40-53 0-96 43-96 96 0 .5.2 1.1.2 1.6C27.6 232.9 0 265.2 0 304c0 44.2 35.8 80 80 80h256c44.2 0 80-35.8 80-80 0-39.2-28.2-71.7-65.5-78.5zm217.4-1.7c-70.4 13.3-135-40.3-135-110.8 0-40.6 21.9-78 57.5-98.1 5.5-3.1 4.1-11.4-2.1-12.5C479.6.8 470.7 0 461.8 0c-77.9 0-141.1 61.2-144.4 137.9 26.7 11.9 48.2 33.8 58.9 61.7 37.1 14.3 64 47.4 70.2 86.8 5.1.5 10 1.5 15.2 1.5 44.7 0 85.6-20.2 112.6-53.3 4.2-4.8-.2-12-6.4-10.8zM364.5 418.1c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8z"],
+    "cloud-rain": [512, 512, [], "f73d", "M416 128c-.6 0-1.1.2-1.6.2 1.1-5.2 1.6-10.6 1.6-16.2 0-44.2-35.8-80-80-80-24.6 0-46.3 11.3-61 28.8C256.4 24.8 219.3 0 176 0 114.1 0 64 50.1 64 112c0 7.3.8 14.3 2.1 21.2C27.8 145.8 0 181.5 0 224c0 53 43 96 96 96h320c53 0 96-43 96-96s-43-96-96-96zM88 374.2c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0zm160 0c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0zm160 0c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0z"],
+    "cloud-showers-heavy": [512, 512, [], "f740", "M183.9 370.1c-7.6-4.4-17.4-1.8-21.8 6l-64 112c-4.4 7.7-1.7 17.5 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l64-112c4.4-7.6 1.7-17.4-6-21.8zm96 0c-7.6-4.4-17.4-1.8-21.8 6l-64 112c-4.4 7.7-1.7 17.5 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l64-112c4.4-7.6 1.7-17.4-6-21.8zm-192 0c-7.6-4.4-17.4-1.8-21.8 6l-64 112c-4.4 7.7-1.7 17.5 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l64-112c4.4-7.6 1.7-17.4-6-21.8zm384 0c-7.6-4.4-17.4-1.8-21.8 6l-64 112c-4.4 7.7-1.7 17.5 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l64-112c4.4-7.6 1.7-17.4-6-21.8zm-96 0c-7.6-4.4-17.4-1.8-21.8 6l-64 112c-4.4 7.7-1.7 17.5 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l64-112c4.4-7.6 1.7-17.4-6-21.8zM416 128c-.6 0-1.1.2-1.6.2 1.1-5.2 1.6-10.6 1.6-16.2 0-44.2-35.8-80-80-80-24.6 0-46.3 11.3-61 28.8C256.4 24.8 219.3 0 176 0 114.2 0 64 50.1 64 112c0 7.3.8 14.3 2.1 21.2C27.8 145.8 0 181.5 0 224c0 53 43 96 96 96h320c53 0 96-43 96-96s-43-96-96-96z"],
+    "cloud-sun": [640, 512, [], "f6c4", "M575.2 325.7c.2-1.9.8-3.7.8-5.6 0-35.3-28.7-64-64-64-12.6 0-24.2 3.8-34.1 10-17.6-38.8-56.5-66-101.9-66-61.8 0-112 50.1-112 112 0 3 .7 5.8.9 8.7-49.6 3.7-88.9 44.7-88.9 95.3 0 53 43 96 96 96h272c53 0 96-43 96-96 0-42.1-27.2-77.4-64.8-90.4zm-430.4-22.6c-43.7-43.7-43.7-114.7 0-158.3 43.7-43.7 114.7-43.7 158.4 0 9.7 9.7 16.9 20.9 22.3 32.7 9.8-3.7 20.1-6 30.7-7.5L386 81.1c4-11.9-7.3-23.1-19.2-19.2L279 91.2 237.5 8.4C232-2.8 216-2.8 210.4 8.4L169 91.2 81.1 61.9C69.3 58 58 69.3 61.9 81.1l29.3 87.8-82.8 41.5c-11.2 5.6-11.2 21.5 0 27.1l82.8 41.4-29.3 87.8c-4 11.9 7.3 23.1 19.2 19.2l76.1-25.3c6.1-12.4 14-23.7 23.6-33.5-13.1-5.4-25.4-13.4-36-24zm-4.8-79.2c0 40.8 29.3 74.8 67.9 82.3 8-4.7 16.3-8.8 25.2-11.7 5.4-44.3 31-82.5 67.4-105C287.3 160.4 258 140 224 140c-46.3 0-84 37.6-84 83.9z"],
+    "cloud-sun-rain": [576, 512, [], "f743", "M510.5 225.5c-6.9-37.2-39.3-65.5-78.5-65.5-12.3 0-23.9 3-34.3 8-17.4-24.1-45.6-40-77.7-40-53 0-96 43-96 96 0 .5.2 1.1.2 1.6C187.6 233 160 265.2 160 304c0 44.2 35.8 80 80 80h256c44.2 0 80-35.8 80-80 0-39.2-28.2-71.7-65.5-78.5zm-386.4 34.4c-37.4-37.4-37.4-98.3 0-135.8 34.6-34.6 89.1-36.8 126.7-7.4 20-12.9 43.6-20.7 69.2-20.7.7 0 1.3.2 2 .2l8.9-26.7c3.4-10.2-6.3-19.8-16.5-16.4l-75.3 25.1-35.5-71c-4.8-9.6-18.5-9.6-23.3 0l-35.5 71-75.3-25.1c-10.2-3.4-19.8 6.3-16.4 16.5l25.1 75.3-71 35.5c-9.6 4.8-9.6 18.5 0 23.3l71 35.5-25.1 75.3c-3.4 10.2 6.3 19.8 16.5 16.5l59.2-19.7c-.2-2.4-.7-4.7-.7-7.2 0-12.5 2.3-24.5 6.2-35.9-3.6-2.7-7.1-5.2-10.2-8.3zm69.8-58c4.3-24.5 15.8-46.4 31.9-64-9.8-6.2-21.4-9.9-33.8-9.9-35.3 0-64 28.7-64 64 0 18.7 8.2 35.4 21.1 47.1 11.3-15.9 26.6-28.9 44.8-37.2zm330.6 216.2c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8zm-96 0c-7.6-4.3-17.4-1.8-21.8 6l-36.6 64c-4.4 7.7-1.7 17.4 6 21.8 2.5 1.4 5.2 2.1 7.9 2.1 5.5 0 10.9-2.9 13.9-8.1l36.6-64c4.3-7.7 1.7-17.4-6-21.8z"],
+    "cloud-upload-alt": [640, 512, [], "f382", "M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zM393.4 288H328v112c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V288h-65.4c-14.3 0-21.4-17.2-11.3-27.3l105.4-105.4c6.2-6.2 16.4-6.2 22.6 0l105.4 105.4c10.1 10.1 2.9 27.3-11.3 27.3z"],
+    "cocktail": [576, 512, [], "f561", "M296 464h-56V338.78l168.74-168.73c15.52-15.52 4.53-42.05-17.42-42.05H24.68c-21.95 0-32.94 26.53-17.42 42.05L176 338.78V464h-56c-22.09 0-40 17.91-40 40 0 4.42 3.58 8 8 8h240c4.42 0 8-3.58 8-8 0-22.09-17.91-40-40-40zM432 0c-62.61 0-115.35 40.2-135.18 96h52.54c16.65-28.55 47.27-48 82.64-48 52.93 0 96 43.06 96 96s-43.07 96-96 96c-14.04 0-27.29-3.2-39.32-8.64l-35.26 35.26C379.23 279.92 404.59 288 432 288c79.53 0 144-64.47 144-144S511.53 0 432 0z"],
+    "code": [640, 512, [], "f121", "M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"],
+    "code-branch": [384, 512, [], "f126", "M384 144c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 36.4 24.3 67.1 57.5 76.8-.6 16.1-4.2 28.5-11 36.9-15.4 19.2-49.3 22.4-85.2 25.7-28.2 2.6-57.4 5.4-81.3 16.9v-144c32.5-10.2 56-40.5 56-76.3 0-44.2-35.8-80-80-80S0 35.8 0 80c0 35.8 23.5 66.1 56 76.3v199.3C23.5 365.9 0 396.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-34-21.2-63.1-51.2-74.6 3.1-5.2 7.8-9.8 14.9-13.4 16.2-8.2 40.4-10.4 66.1-12.8 42.2-3.9 90-8.4 118.2-43.4 14-17.4 21.1-39.8 21.6-67.9 31.6-10.8 54.4-40.7 54.4-75.9zM80 64c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm0 384c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm224-320c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16z"],
+    "coffee": [640, 512, [], "f0f4", "M192 384h192c53 0 9pover-content .note-style h4,.note-toolbar .note-style h4,.note-popover .popover .popover-content .note-style h5,.note-toolbar .note-style h5,.note-popover .popover .popover-content .note-style h6,.note-toolbar .note-style h6,.note-popover .popover .popover-content .note-style blockquote,.note-toolbar .note-style blockquote{margin:0}.note-popover .popover .popover-content .note-color .dropdown-toggle,.note-toolbar .note-color .dropdown-toggle{width:20px;padding-left:5px}.note-popover .popover .popover-content .note-color .dropdown-menu,.note-toolbar .note-color .dropdown-menu{min-width:340px}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group,.note-toolbar .note-color .dropdown-menu .btn-group{margin:0}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group:first-child,.note-toolbar .note-color .dropdown-menu .btn-group:first-child{margin:0 5px}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-palette-title,.note-toolbar .note-color .dropdown-menu .btn-group .note-palette-title{margin:2px 7px;font-size:12px;text-align:center;border-bottom:1px solid #eee}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-reset,.note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset{padding:0 3px;margin:3px;font-size:11px;cursor:pointer;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-row,.note-toolbar .note-color .dropdown-menu .btn-group .note-color-row{height:20px}.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-reset:hover,.note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset:hover{background:#eee}.note-popover .popover .popover-content .note-para .dropdown-menu,.note-toolbar .note-para .dropdown-menu{min-width:216px;padding:5px}.note-popover .popover .popover-content .note-para .dropdown-menu>div:first-child,.note-toolbar .note-para .dropdown-menu>div:first-child{margin-right:5px}.note-popover .popover .popover-content .dropdown-menu,.note-toolbar .dropdown-menu{min-width:90px}.note-popover .popover .popover-content .dropdown-menu.right,.note-toolbar .dropdown-menu.right{right:0;left:auto}.note-popover .popover .popover-content .dropdown-menu.right::before,.note-toolbar .dropdown-menu.right::before{right:9px;left:auto!important}.note-popover .popover .popover-content .dropdown-menu.right::after,.note-toolbar .dropdown-menu.right::after{right:10px;left:auto!important}.note-popover .popover .popover-content .dropdown-menu li a i,.note-toolbar .dropdown-menu li a i{color:deepskyblue;visibility:hidden}.note-popover .popover .popover-content .dropdown-menu li a.checked i,.note-toolbar .dropdown-menu li a.checked i{visibility:visible}.note-popover .popover .popover-content .note-fontsize-10,.note-toolbar .note-fontsize-10{font-size:10px}.note-popover .popover .popover-content .note-color-palette,.note-toolbar .note-color-palette{line-height:1}.note-popover .popover .popover-content .note-color-palette div .note-color-btn,.note-toolbar .note-color-palette div .note-color-btn{width:20px;height:20px;padding:0;margin:0;border:1px solid #fff}.note-popover .popover .popover-content .note-color-palette div .note-color-btn:hover,.note-toolbar .note-color-palette div .note-color-btn:hover{border:1px solid #000}.note-dialog>div{display:none}.note-dialog .note-image-dialog .note-dropzone{min-height:100px;margin-bottom:10px;font-size:30px;line-height:4;color:lightgray;text-align:center;border:4px dashed lightgray}.note-dialog .note-help-dialog{font-size:12px;color:#ccc;background:transparent;background-color:#222!important;border:0;-webkit-opacity:.9;-khtml-opacity:.9;-moz-opacity:.9;opacity:.9;-ms-filter:alpha(opacity=90);filter:alpha(opacity=90)}.note-dialog .note-help-dialog .modal-content{background:transparent;border:1px solid white;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.note-dialog .note-help-dialog a{font-size:12px;color:white}.note-dialog .note-help-dialog .title{padding-bottom:5px;font-size:14px;font-weight:bold;color:white;border-bottom:white 1px solid}.note-dialog .note-help-dialog .modal-close{font-size:14px;color:#dd0;cursor:pointer}.note-dialog .note-help-dialog .note-shortcut-layout{width:100%}.note-dialog .note-help-dialog .note-shortcut-layout td{vertical-align:top}.note-dialog .note-help-dialog .note-shortcut{margin-top:8px}.note-dialog .note-help-dialog .note-shortcut th{font-size:13px;color:#dd0;text-align:left}.note-dialog .note-help-dialog .note-shortcut td:first-child{min-width:110px;padding-right:10px;font-family:"Courier New";color:#dd0;text-align:right}.note-handle .note-control-selection{position:absolute;display:none;border:1px solid black}.note-handle .note-control-selection>div{position:absolute}.note-handle .note-control-selection .note-control-selection-bg{width:100%;height:100%;background-color:black;-webkit-opacity:.3;-khtml-opacity:.3;-moz-opacity:.3;opacity:.3;-ms-filter:alpha(opacity=30);filter:alpha(opacity=30)}.note-handle .note-control-selection .note-control-handle{width:7px;height:7px;border:1px solid black}.note-handle .note-control-selection .note-control-holder{width:7px;height:7px;border:1px solid black}.note-handle .note-control-selection .note-control-sizing{width:7px;height:7px;background-color:white;border:1px solid black}.note-handle .note-control-selection .note-control-nw{top:-5px;left:-5px;border-right:0;border-bottom:0}.note-handle .note-control-selection .note-control-ne{top:-5px;right:-5px;border-bottom:0;border-left:none}.note-handle .note-control-selection .note-control-sw{bottom:-5px;left:-5px;border-top:0;border-right:0}.note-handle .note-control-selection .note-control-se{right:-5px;bottom:-5px;cursor:se-resize}.note-handle .note-control-selection .note-control-selection-info{right:0;bottom:0;padding:5px;margin:5px;font-size:12px;color:white;background-color:black;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-opacity:.7;-khtml-opacity:.7;-moz-opacity:.7;opacity:.7;-ms-filter:alpha(opacity=70);filter:alpha(opacity=70)}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ﻿/*
+Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/license
+*/
+CKEDITOR.lang['fi']={"editor":"Rikastekstieditori","editorPanel":"Rikastekstieditoripaneeli","common":{"editorHelp":"Paina ALT 0 nähdäksesi ohjeen","browseServer":"Selaa palvelinta","url":"Osoite","protocol":"Protokolla","upload":"Lisää tiedosto","uploadSubmit":"Lähetä palvelimelle","image":"Kuva","flash":"Flash-animaatio","form":"Lomake","checkbox":"Valintaruutu","radio":"Radiopainike","textField":"Tekstikenttä","textarea":"Tekstilaatikko","hiddenField":"Piilokenttä","button":"Painike","select":"Valintakenttä","imageButton":"Kuvapainike","notSet":"<ei asetettu>","id":"Tunniste","name":"Nimi","langDir":"Kielen suunta","langDirLtr":"Vasemmalta oikealle (LTR)","langDirRtl":"Oikealta vasemmalle (RTL)","langCode":"Kielikoodi","longDescr":"Pitkän kuvauksen URL","cssClass":"Tyyliluokat","advisoryTitle":"Avustava otsikko","cssStyle":"Tyyli","ok":"OK","cancel":"Peruuta","close":"Sulje","preview":"Esikatselu","resize":"Raahaa muuttaaksesi kokoa","generalTab":"Yleinen","advancedTab":"Lisäominaisuudet","validateNumberFailed":"Arvon pitää olla numero.","confirmNewPage":"Kaikki tallentamattomat muutokset tähän sisältöön menetetään. Oletko varma, että haluat ladata uuden sivun?","confirmCancel":"Jotkut asetuksista on muuttuneet. Oletko varma, että haluat sulkea valintaikkunan?","options":"Asetukset","target":"Kohde","targetNew":"Uusi ikkuna (_blank)","targetTop":"Päällimmäinen ikkuna (_top)","targetSelf":"Sama ikkuna (_self)","targetParent":"Ylemmän tason ikkuna (_parent)","langDirLTR":"Vasemmalta oikealle (LTR)","langDirRTL":"Oikealta vasemmalle (RTL)","styles":"Tyyli","cssClasses":"Tyylitiedoston luokat","width":"Leveys","height":"Korkeus","align":"Kohdistus","left":"Vasemmalle","right":"Oikealle","center":"Keskelle","justify":"Tasaa molemmat reunat","alignLeft":"Tasaa vasemmat reunat","alignRight":"Tasaa oikeat reunat","alignCenter":"Align Center","alignTop":"Ylös","alignMiddle":"Keskelle","alignBottom":"Alas","alignNone":"Ei asetettu","invalidValue":"Virheellinen arvo.","invalidHeight":"Korkeuden täytyy olla numero.","invalidWidth":"Leveyden täytyy olla numero.","invalidLength":"Value specified for the \"%1\" field must be a positive number with or without a valid measurement unit (%2).","invalidCssLength":"Kentän \"%1\" arvon täytyy olla positiivinen luku CSS mittayksikön (px, %, in, cm, mm, em, ex, pt tai pc) kanssa tai ilman.","invalidHtmlLength":"Kentän \"%1\" arvon täytyy olla positiivinen luku HTML mittayksikön (px tai %) kanssa tai ilman.","invalidInlineStyle":"Tyylille annetun arvon täytyy koostua yhdestä tai useammasta \"nimi : arvo\" parista, jotka ovat eroteltuna toisistaan puolipisteillä.","cssLengthTooltip":"Anna numeroarvo pikseleinä tai numeroarvo CSS mittayksikön kanssa (px, %, in, cm, mm, em, ex, pt, tai pc).","unavailable":"%1<span class=\"cke_accessibility\">, ei saatavissa</span>","keyboard":{"8":"Backspace","13":"Enter","16":"Shift","17":"Ctrl","18":"Alt","32":"Space","35":"End","36":"Home","46":"Delete","112":"F1","113":"F2","114":"F3","115":"F4","116":"F5","117":"F6","118":"F7","119":"F8","120":"F9","121":"F10","122":"F11","123":"F12","124":"F13","125":"F14","126":"F15","127":"F16","128":"F17","129":"F18","130":"F19","131":"F20","132":"F21","133":"F22","134":"F23","135":"F24","224":"Command"},"keyboardShortcut":"Keyboard shortcut","optionDefault":"Default"},"about":{"copy":"Copyright &copy; $1. Kaikki oikeuden pidätetään.","dlgTitle":"Tietoa CKEditorista","moreInfo":"Lisenssitiedot löytyvät kotisivuiltamme:"},"basicstyles":{"bold":"Lihavoitu","italic":"Kursivoitu","strike":"Yliviivattu","subscript":"Alaindeksi","superscript":"Yläindeksi","underline":"Alleviivattu"},"bidi":{"ltr":"Tekstin suunta vasemmalta oikealle","rtl":"Tekstin suunta oikealta vasemmalle"},"blockquote":{"toolbar":"Lainaus"},"colorbutton":{"auto":"Automaattinen","bgColorTitle":"Taustaväri","colors":{"000":"Musta","800000":"Kastanjanruskea","8B451/*!
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.note-editor {
+  /* Allow for input prepend/append in search forms */
+
+  /* White icons with optional class, or on hover/focus/active states of certain elements */
+
+  /* move down carets for tabs */
+
+}
+.note-editor .clearfix {
+  *zoom: 1;
+}
+.note-editor .clearfix:before,
+.note-editor .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-editor .clearfix:after {
+  clear: both;
+}
+.note-editor .hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.note-editor .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.note-editor article,
+.note-editor aside,
+.note-editor details,
+.note-editor figcaption,
+.note-editor figure,
+.note-editor footer,
+.note-editor header,
+.note-editor hgroup,
+.note-editor nav,
+.note-editor section {
+  display: block;
+}
+.note-editor audio,
+.note-editor canvas,
+.note-editor video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.note-editor audio:not([controls]) {
+  display: none;
+}
+.note-editor html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.note-editor a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.note-editor a:hover,
+.note-editor a:active {
+  outline: 0;
+}
+.note-editor sub,
+.note-editor sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+.note-editor sup {
+  top: -0.5em;
+}
+.note-editor sub {
+  bottom: -0.25em;
+}
+.note-editor img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.note-editor #map_canvas img,
+.note-editor .google-maps img {
+  max-width: none;
+}
+.note-editor button,
+.note-editor input,
+.note-editor select,
+.note-editor textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+.note-editor button,
+.note-editor input {
+  *overflow: visible;
+  line-height: normal;
+}
+.note-editor button::-moz-focus-inner,
+.note-editor input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.note-editor button,
+.note-editor html input[type="button"],
+.note-editor input[type="reset"],
+.note-editor input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.note-editor label,
+.note-editor select,
+.note-editor button,
+.note-editor input[type="button"],
+.note-editor input[type="reset"],
+.note-editor input[type="submit"],
+.note-editor input[type="radio"],
+.note-editor input[type="checkbox"] {
+  cursor: pointer;
+}
+.note-editor input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+.note-editor input[type="search"]::-webkit-search-decoration,
+.note-editor input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.note-editor textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+@media print {
+  .note-editor * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .note-editor a,
+  .note-editor a:visited {
+    text-decoration: underline;
+  }
+  .note-editor a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  .note-editor abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .note-editor .ir a:after,
+  .note-editor a[href^="javascript:"]:after,
+  .note-editor a[href^="#"]:after {
+    content: "";
+  }
+  .note-editor pre,
+  .note-editor blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  .note-editor thead {
+    display: table-header-group;
+  }
+  .note-editor tr,
+  .note-editor img {
+    page-break-inside: avoid;
+  }
+  .note-editor img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  .note-editor p,
+  .note-editor h2,
+  .note-editor h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  .note-editor h2,
+  .note-editor h3 {
+    page-break-after: avoid;
+  }
+}
+.note-editor body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+.note-editor a {
+  color: #0088cc;
+  text-decoration: none;
+}
+.note-editor a:hover,
+.note-editor a:focus {
+  color: #005580;
+  text-decoration: underline;
+}
+.note-editor .img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.note-editor .img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.note-editor .img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.note-editor .row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.note-editor .row:before,
+.note-editor .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-editor .row:after {
+  clear: both;
+}
+.note-editor [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.note-editor .container,
+.note-editor .navbar-static-top .container,
+.note-editor .navbar-fixed-top .container,
+.note-editor .navbar-fixed-bottom .container {
+  width: 940px;
+}
+.note-editor .span12 {
+  width: 940px;
+}
+.note-editor .span11 {
+  width: 860px;
+}
+.note-editor .span10 {
+  width: 780px;
+}
+.note-editor .span9 {
+  width: 700px;
+}
+.note-editor .span8 {
+  width: 620px;
+}
+.note-editor .span7 {
+  width: 540px;
+}
+.note-editor .span6 {
+  width: 460px;
+}
+.note-editor .span5 {
+  width: 380px;
+}
+.note-editor .span4 {
+  width: 300px;
+}
+.note-editor .span3 {
+  width: 220px;
+}
+.note-editor .span2 {
+  width: 140px;
+}
+.note-editor .span1 {
+  width: 60px;
+}
+.note-editor .offset12 {
+  margin-left: 980px;
+}
+.note-editor .offset11 {
+  margin-left: 900px;
+}
+.note-editor .offset10 {
+  margin-left: 820px;
+}
+.note-editor .offset9 {
+  margin-left: 740px;
+}
+.note-editor .offset8 {
+  margin-left: 660px;
+}
+.note-editor .offset7 {
+  margin-left: 580px;
+}
+.note-editor .offset6 {
+  margin-left: 500px;
+}
+.note-editor .offset5 {
+  margin-left: 420px;
+}
+.note-editor .offset4 {
+  margin-left: 340px;
+}
+.note-editor .offset3 {
+  margin-left: 260px;
+}
+.note-editor .offset2 {
+  margin-left: 180px;
+}
+.note-editor .offset1 {
+  margin-left: 100px;
+}
+.note-editor .row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+.note-editor .row-fluid:before,
+.note-editor .row-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-editor .row-fluid:after {
+  clear: both;
+}
+.note-editor .row-fluid [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+}
+.note-editor .row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+.note-editor .row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+.note-editor .row-fluid .span12 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+.note-editor .row-fluid .span11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%;
+}
+.note-editor .row-fluid .span10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+}
+.note-editor .row-fluid .span9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%;
+}
+.note-editor .row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+.note-editor .row-fluid .span7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%;
+}
+.note-editor .row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+.note-editor .row-fluid .span5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%;
+}
+.note-editor .row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+.note-editor .row-fluid .span3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%;
+}
+.note-editor .row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+.note-editor .row-fluid .span1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%;
+}
+.note-editor .row-fluid .offset12 {
+  margin-left: 104.25531914893617%;
+  *margin-left: 104.14893617021275%;
+}
+.note-editor .row-fluid .offset12:first-child {
+  margin-left: 102.12765957446808%;
+  *margin-left: 102.02127659574467%;
+}
+.note-editor .row-fluid .offset11 {
+  margin-left: 95.74468085106382%;
+  *margin-left: 95.6382978723404%;
+}
+.note-editor .row-fluid .offset11:first-child {
+  margin-left: 93.61702127659574%;
+  *margin-left: 93.51063829787232%;
+}
+.note-editor .row-fluid .offset10 {
+  margin-left: 87.23404255319149%;
+  *margin-left: 87.12765957446807%;
+}
+.note-editor .row-fluid .offset10:first-child {
+  margin-left: 85.1063829787234%;
+  *margin-left: 84.99999999999999%;
+}
+.note-editor .row-fluid .offset9 {
+  margin-left: 78.72340425531914%;
+  *margin-left: 78.61702127659572%;
+}
+.note-editor .row-fluid .offset9:first-child {
+  margin-left: 76.59574468085106%;
+  *margin-left: 76.48936170212764%;
+}
+.note-editor .row-fluid .offset8 {
+  margin-left: 70.2127659574468%;
+  *margin-left: 70.10638297872339%;
+}
+.note-editor .row-fluid .offset8:first-child {
+  margin-left: 68.08510638297872%;
+  *margin-left: 67.9787234042553%;
+}
+.note-editor .row-fluid .offset7 {
+  margin-left: 61.70212765957446%;
+  *margin-left: 61.59574468085106%;
+}
+.note-editor .row-fluid .offset7:first-child {
+  margin-left: 59.574468085106375%;
+  *margin-left: 59.46808510638297%;
+}
+.note-editor .row-fluid .offset6 {
+  margin-left: 53.191489361702125%;
+  *margin-left: 53.085106382978715%;
+}
+.note-editor .row-fluid .offset6:first-child {
+  margin-left: 51.063829787234035%;
+  *margin-left: 50.95744680851063%;
+}
+.note-editor .row-fluid .offset5 {
+  margin-left: 44.68085106382979%;
+  *margin-left: 44.57446808510638%;
+}
+.note-editor .row-fluid .offset5:first-child {
+  margin-left: 42.5531914893617%;
+  *margin-left: 42.4468085106383%;
+}
+.note-editor .row-fluid .offset4 {
+  margin-left: 36.170212765957444%;
+  *margin-left: 36.06382978723405%;
+}
+.note-editor .row-fluid .offset4:first-child {
+  margin-left: 34.04255319148936%;
+  *margin-left: 33.93617021276596%;
+}
+.note-editor .row-fluid .offset3 {
+  margin-left: 27.659574468085104%;
+  *margin-left: 27.5531914893617%;
+}
+.note-editor .row-fluid .offset3:first-child {
+  margin-left: 25.53191489361702%;
+  *margin-left: 25.425531914893618%;
+}
+.note-editor .row-fluid .offset2 {
+  margin-left: 19.148936170212764%;
+  *margin-left: 19.04255319148936%;
+}
+.note-editor .row-fluid .offset2:first-child {
+  margin-left: 17.02127659574468%;
+  *margin-left: 16.914893617021278%;
+}
+.note-editor .row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%;
+}
+.note-editor .row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%;
+}
+.note-editor [class*="span"].hide,
+.note-editor .row-fluid [class*="span"].hide {
+  display: none;
+}
+.note-editor [class*="span"].pull-right,
+.note-editor .row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.note-editor .container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.note-editor .container:before,
+.note-editor .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-editor .container:after {
+  clear: both;
+}
+.note-editor .container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+.note-editor .container-fluid:before,
+.note-editor .container-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-editor .container-fluid:after {
+  clear: both;
+}
+.note-editor p {
+  margin: 0 0 10px;
+}
+.note-editor .lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.note-editor small {
+  font-size: 85%;
+}
+.note-editor strong {
+  font-weight: bol

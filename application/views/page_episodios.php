@@ -100,7 +100,7 @@
 
 		    function load_data(limit, start) {
 		      	$.ajax({
-			        url: "/animes/get_episodios/" + id_anime,
+			        url: "<?= base_url('animes/get_episodios/') ?>" + id_anime,
 			        method:"POST",
 			        data:{limit:limit, start:start},
 			        cache: false,

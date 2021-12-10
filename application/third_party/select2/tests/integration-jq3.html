@@ -1,0 +1,18 @@
+ drill id is returned, add click event and cursor. 
+                if (isString(drillId)) {
+                    point.setState(''); // Remove hover
+                    series.drillToNode(drillId);
+                }
+            },
+            /**
+             * Finds the drill id for a parent node.
+             * Returns false if point should not have a click event
+             * @param {Object} point
+             * @return {String|Boolean} Drill to id or false when point should not have a click event
+             */
+            drillToByGroup: function(point) {
+                var series = this,
+                    drillId = false;
+                if ((point.node.level - series.nodeMap[series.rootNode].level) === 1 && !point.node.isLeaf) {
+                    drillId = point.id;
+          

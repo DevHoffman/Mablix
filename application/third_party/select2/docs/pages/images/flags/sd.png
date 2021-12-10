@@ -1,0 +1,272 @@
+      'printChart',
+                        'separator',
+                        'downloadPNG',
+                        'downloadJPEG',
+                        'downloadPDF',
+                        'downloadSVG'
+                    ]
+                }
+            },
+            /**
+             * An object consisting of definitions for the menu items in the context
+             * menu. Each key value pair has a `key` that is referenced in the
+             * [menuItems](#exporting.buttons.contextButton.menuItems) setting,
+             * and a `value`, which is an object with the following properties:
+             * 
+             * <dl>
+             * 
+             * <dt>onclick</dt>
+             * 
+             * <dd>The click handler for the menu item</dd>
+             * 
+             * <dt>text</dt>
+             * 
+             * <dd>The text for the menu item</dd>
+             * 
+             * <dt>textKey</dt>
+             * 
+             * <dd>If internationalization is required, the key to a language string</dd>
+             * 
+             * </dl>
+             * 
+             * @type {Object}
+             * @sample {highcharts} highcharts/exporting/menuitemdefinitions/
+             *         Menu item definitions
+             * @sample {highstock} highcharts/exporting/menuitemdefinitions/
+             *         Menu item definitions
+             * @sample {highmaps} highcharts/exporting/menuitemdefinitions/
+             *         Menu item definitions
+             * @since 5.0.13
+             */
+            menuItemDefinitions: {
+
+                /**
+                 * @ignore
+                 */
+                printChart: {
+                    textKey: 'printChart',
+                    onclick: function() {
+                        this.print();
+                    }
+                },
+
+                /**
+                 * @ignore
+                 */
+                separator: {
+                    separator: true
+                },
+
+                /**
+                 * @ignore
+                 */
+                downloadPNG: {
+                    textKey: 'downloadPNG',
+                    onclick: function() {
+                        this.exportChart();
+                    }
+                },
+
+                /**
+                 * @ignore
+                 */
+                downloadJPEG: {
+                    textKey: 'downloadJPEG',
+                    onclick: function() {
+                        this.exportChart({
+                            type: 'image/jpeg'
+                        });
+                    }
+                },
+
+                /**
+                 * @ignore
+                 */
+                downloadPDF: {
+                    textKey: 'downloadPDF',
+                    onclick: function() {
+                        this.exportChart({
+                            type: 'application/pdf'
+                        });
+                    }
+                },
+
+                /**
+                 * @ignore
+                 */
+                downloadSVG: {
+                    textKey: 'downloadSVG',
+                    onclick: function() {
+                        this.exportChart({
+                            type: 'image/svg+xml'
+                        });
+                    }
+                }
+            }
+        };
+
+        /**
+         * Fires after a chart is printed through the context menu item or the
+         * `Chart.print` method. Requires the exporting module.
+         * 
+         * @type {Function}
+         * @context Chart
+         * @sample {highcharts} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @sample {highstock} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @sample {highmaps} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @since 4.1.0
+         * @apioption chart.events.afterPrint
+         */
+
+        /**
+         * Fires before a chart is printed through the context menu item or
+         * the `Chart.print` method. Requires the exporting module.
+         * 
+         * @type {Function}
+         * @context Chart
+         * @sample {highcharts} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @sample {highstock} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @sample {highmaps} highcharts/chart/events-beforeprint-afterprint/
+         *         Rescale the chart to print
+         * @since 4.1.0
+         * @apioption chart.events.beforePrint
+         */
+
+
+        // Add the H.post utility
+        H.post = function(url, data, formAttributes) {
+            // create the form
+            var form = createElement('form', merge({
+                method: 'post',
+                action: url,
+                enctype: 'multipart/form-data'
+            }, formAttributes), {
+                display: 'none'
+            }, doc.body);
+
+            // add the data
+            objectEach(data, function(val, name) {
+                createElement('input', {
+                    type: 'hidden',
+                    name: name,
+                    value: val
+                }, null, form);
+            });
+
+            // submit
+            form.submit();
+
+            // clean up
+            discardElement(form);
+        };
+
+        extend(Chart.prototype, /** @lends Highcharts.Chart.prototype */ {
+
+            /**
+             * Exporting module only. A collection of fixes on the produced SVG to
+             * account for expando properties, browser bugs, VML problems and other.
+             * Returns a cleaned SVG.
+             *
+             * @private
+             */
+            sanitizeSVG: function(svg, options) {
+                // Move HTML into a foreignObject
+                if (options && options.exporting && options.exporting.allowHTML) {
+                    var html = svg.match(/<\/svg>(.*?$)/);
+                    if (html && html[1]) {
+                        html = '<foreignObject x="0" y="0" ' +
+                            'width="' + options.chart.width + '" ' +
+                            'height="' + options.chart.height + '">' +
+                            '<body xmlns="http://www.w3.org/1999/xhtml">' +
+                            html[1] +
+                            '</body>' +
+                            '</foreignObject>';
+                        svg = svg.replace('</svg>', html + '</svg>');
+                    }
+                }
+
+                svg = svg
+                    .replace(/zIndex="[^"]+"/g, '')
+                    .replace(/isShadow="[^"]+"/g, '')
+                    .replace(/symbolName="[^"]+"/g, '')
+                    .replace(/jQuery[0-9]+="[^"]+"/g, '')
+                    .replace(/url\(("|&quot;)(\S+)("|&quot;)\)/g, 'url($2)')
+                    .replace(/url\([^#]+#/g, 'url(#')
+                    .replace(/<svg /, '<svg xmlns:xlink="http://www.w3.org/1999/xlink" ')
+                    .replace(/ (NS[0-9]+\:)?href=/g, ' xlink:href=') // #3567
+                    .replace(/\n/, ' ')
+                    // Any HTML added to the container after the SVG (#894)
+                    .replace(/<\/svg>.*?$/, '</svg>')
+                    // Batik doesn't support rgba fills and strokes (#3095)
+                    .replace(/(fill|stroke)="rgba\(([ 0-9]+,[ 0-9]+,[ 0-9]+),([ 0-9\.]+)\)"/g, '$1="rgb($2)" $1-opacity="$3"')
+
+                    // Replace HTML entities, issue #347
+                    .replace(/&nbsp;/g, '\u00A0') // no-break space
+                    .replace(/&shy;/g, '\u00AD'); // soft hyphen
+
+
+                // Further sanitize for oldIE
+                if (this.ieSanitizeSVG) {
+                    svg = this.ieSanitizeSVG(svg);
+                }
+
+
+                return svg;
+            },
+
+            /**
+             * Return the unfiltered innerHTML of the chart container. Used as hook for
+             * plugins. In styled mode, it also takes care of inlining CSS style rules.
+             *
+             * @see  Chart#getSVG
+             *
+             * @returns {String}
+             *          The unfiltered SVG of the chart.
+             */
+            getChartHTML: function() {
+
+                return this.container.innerHTML;
+            },
+
+            /**
+             * Return an SVG representation of the chart.
+             *
+             * @param  chartOptions {Options}
+             *         Additional chart options for the generated SVG representation.
+             *         For collections like `xAxis`, `yAxis` or `series`, the additional
+             *         options is either merged in to the orininal item of the same
+             *         `id`, or to the first item if a common id is not found.
+             * @return {String}
+             *         The SVG representation of the rendered chart.
+             * @sample highcharts/members/chart-getsvg/
+             *         View the SVG from a button
+             */
+            getSVG: function(chartOptions) {
+                var chart = this,
+                    chartCopy,
+                    sandbox,
+                    svg,
+                    seriesOptions,
+                    sourceWidth,
+                    sourceHeight,
+                    cssWidth,
+                    cssHeight,
+                    options = merge(chart.options, chartOptions); // copy the options and add extra options
+
+
+                // create a sandbox where a new chart will be generated
+                sandbox = createElement('div', null, {
+                    position: 'absolute',
+                    top: '-9999em',
+                    width: chart.chartWidth + 'px',
+                    height: chart.chartHeight + 'px'
+                }, doc.body);
+
+                // get the source size
+                cssWidth = chart.renderTo.style.width;
+                cssHeight = chart.renderT

@@ -303,7 +303,7 @@
 				$.ajax({
 					type: "POST",
                     enctype: 'multipart/form-data',
-					url: "/admin/episodios/update",
+					url: "<?= base_url('admin/episodios/update'); ?>",
 					data: data,
 					contentType: false,
 					processData: false,

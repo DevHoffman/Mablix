@@ -143,7 +143,7 @@
 					$.ajax({
 
 						type: "POST",
-						url: "/contato/envia",
+						url: "<?= base_url('contato/envia'); ?>",
 						data: $(form).serialize(),
 						beforeSend: function() {
 
